@@ -1,0 +1,36 @@
+.bg{
+    @apply flex items-center justify-center h-screen mx-auto bg-fixed bg-center bg-cover bg-bragi-roxo 
+}
+
+.logoPosition{
+    @apply fixed top-0 right-0 flex items-end justify-end w-3/5 sm:w-full;
+}
+
+.textGeral{
+    @apply left-20 p-5 mt-10 text-xl text-white sm:absolute   
+}
+
+.textBragi{
+    @apply text-3xl sm:text-6xl font-bold mb-2
+}
+
+.flexRow{
+    @apply flex flex-row gap-3 my-1 w-1/2 sm:w-full sm:my-6
+}
+
+.textSubBragi{
+    @apply font-bold uppercase sm:mb-2 sm:text-4xl
+}
+
+.descricao{
+    @apply uppercase font-semibold text-base sm:text-lg
+}
+
+.redes{
+    @apply w-3/4 sm:w-full flex flex-row gap-4 items-center mt-6
+}
+
+
+.hover{
+    @apply hover:text-orange
+}
