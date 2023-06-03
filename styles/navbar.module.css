@@ -1,20 +1,19 @@
-.navbar{
-    @apply fixed bottom-0 w-full z-10 ease-in duration-300 bg-black px-10 py-11 sm:py-5
+.navbar {
+  @apply w-full z-10 ease-in duration-300 bg-black px-10 py-11 sm:py-5;
 }
 
-.gridBotoes{
-    @apply grid grid-cols-3 gap-12 sm:flex justify-between items-center
+.gridBotoes {
+  @apply grid grid-cols-3 gap-12 sm:flex justify-between items-center;
 }
 
-.colunaLogo{
-    @apply row-span-2
+.colunaLogo {
+  @apply row-span-2;
 }
 
-.tamanhoLogo{
-    @apply max-w-full
+.tamanhoLogo {
+  @apply max-w-full;
 }
 
-.botoes{
-    @apply text-lg text-white hover:text-[#d05424]
+.botoes {
+  @apply text-lg text-white hover:text-[#d05424];
 }
-
