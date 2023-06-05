@@ -76,7 +76,7 @@ const Slider = ({slides})  => {
         );
     })} 
 
-    <SideMenu/>
+    {/* <SideMenu/> */}
     </div>
     
   );
