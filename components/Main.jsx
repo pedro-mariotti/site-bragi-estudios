@@ -29,7 +29,7 @@ const Main = () => {
               </h2>
             </div>
             <h3 className="uppercase font-semibold text-base sm:text-lg">
-              Somos um pequeno
+              Somos um 
               <br />
               estúdio baiano <br />
               desenvolvendo <br />
@@ -37,7 +37,7 @@ const Main = () => {
             </h3>
             <div>
               {/* Redes sociais */}
-              <ul className="flex gap-12">
+              <ul className="flex-row flex gap-8">
                 <li>
                   <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
                     <span>
@@ -58,8 +58,8 @@ const Main = () => {
                     <Image
                       src="/tiktok.svg"
                       alt="tiktok"
-                      width={42}
-                      height={42}
+                      width={50}
+                      height={50}
                     />
                   </Link>
                 </li>
@@ -71,8 +71,8 @@ const Main = () => {
                     <Image
                       src="/instagram.svg"
                       alt="insta"
-                      width={40}
-                      height={40}
+                      width={45}
+                      height={45}
                     />
                   </Link>
                 </li>
@@ -97,8 +97,8 @@ const Main = () => {
                     <Image
                       src="/twitter.svg"
                       alt="twitter"
-                      width={40}
-                      height={40}
+                      width={50}
+                      height={50}
                     />
                   </Link>
                 </li>
