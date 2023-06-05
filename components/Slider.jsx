@@ -1,9 +1,7 @@
-
 import Image from 'next/image';
 import { useState } from 'react';
 import { SliderData } from './SliderData';
-import style from '@/styles/slider.module.css';
-import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/io';
+import SideMenu from "@/components/SideMenu";
 
 const Slider = ({slides})  => {
   const [current, setCurrent] = useState(0);
@@ -24,47 +22,63 @@ const Slider = ({slides})  => {
   return (
     <div id='gallery' className='relative w-screen h-screen overflow-hidden'>
     
-     {SliderData.map((slide, index) => {
+     {slides.map((slide, index) => {
         return (
           <div key={index} className={index === current ? 'opacity-[1] ease-in duration-1000' : 'opacity-0'}>
-            <button
-              onClick={previousData}
-              className='absolute top-[50%] left-[30px] inline-block max-w-lg p-4 rounded-lg bg-[#ffffff] transform -translate-y-1/2 black-white/70 cursor-pointer select-none z-[2]'
-            >
-              Anterior
-            </button>
-    
+            
+            
             {index === current &&(
               <div>
+                {/* nao sei pq isso aq não aparece */}
+                <div className='absolute right-0 z-10'>
+                  <Image 
+                    src={slide.logo}
+                    alt='/'
+                    width={1200}
+                    height={900}
+                  />
+                </div>
+
                 <Image
                   src={slide.image}
                   alt='/'
                   fill
                   style={{objectFit:"cover", objectPosition:'center'}}
                 />
-                 <div className='absolute '>
-                  <div className='absolute inline-block max-w-lg p-4 bg-[#ffffff] rounded-lg shadow-lg'>
-                    <div className='text-lg text-black'>{slide.descricao}</div>
+                 <div className='absolute top-[45%] right-[3.5%] text-purple z-20'>
+                  <div className='inline-block w-[608px] h-[250px] p-4 bg-[#ffffff] shadow-lg font-semibold'>
+                    <div className='text-lg'>
+                      <span className=' text-orange'>{slide.titulo}</span> | <span>{slide.ano}</span>
+                    </div>
+                    <div className='text-lg'>{slide.descricao}</div>
+                    <div className='absolute top-[75%]'>{slide.publisher}</div>
                   </div>
                 </div>
               </div>
             ) }
-           
+            
+           <div className='absolute top-[82%] right-[3.5%] flex flex-row gap-3 z-20'>
             <button
-              onClick={nextData}
-              className='absolute top-[50%] right-[30px] inline-block max-w-lg p-4 rounded-lg bg-[#ffffff] transform -translate-y-1/2 black-white/70 cursor-pointer select-none z-[2]'
-            >
-              Próximo
-            </button>
-            
-            
+                onClick={previousData}
+                className='w-[298px] h-[50px] bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
+              >
+                {'<'} JOGO ANTERIOR
+              </button>
 
-            
+              <button
+                onClick={nextData}
+                className='w-[298px] h-[50px] bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
+              >
+                PRÓXIMO JOGO {'>'}
+              </button>
+           </div>
           </div>
         );
     })} 
-      
+
+    <SideMenu/>
     </div>
+    
   );
 }
 

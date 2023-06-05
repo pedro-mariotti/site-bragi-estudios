@@ -12,7 +12,8 @@ module.exports = {
       current: 'currentColor',
       'white': '#ffffff',
       'black': '#0f0f0f',
-      'orange': 'd05424',
+      'orange': '#d05424',
+      'purple': '#3e2759'
     },
     extend: {
       backgroundImage: {

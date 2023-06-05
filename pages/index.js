@@ -16,6 +16,7 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Main />
+      
     </div>
   );
 }
