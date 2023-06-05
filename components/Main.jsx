@@ -1,4 +1,3 @@
-import style from '@/styles/main.module.css';
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
@@ -8,12 +7,12 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
+      className="h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
     >
       {/* Logo background */}
-      <div className=" h-full flex flex-wrap items-end flex-row-reverse justify-between gap-12 sm:gap-0">
-        <div className="pt-8 w-72 self-start">
-          <img src="/logo-grande.png" alt="logo" />
+      <div className=" h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
+        <div className="pt-8 self-end lg:self-start ">
+          <img src="/logo-grande.png" alt="logo" className="w-72 lg:w-96" />
         </div>
 
         {/* Conteiner geral dos textos */}
