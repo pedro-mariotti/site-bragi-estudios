@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import React from 'react';
-import NavBar from './NavBar';
+import NavBar from '../components/NavBar';
 
 const Main = () => {
   return (
@@ -29,7 +29,7 @@ const Main = () => {
               </h2>
             </div>
             <h3 className="uppercase font-semibold text-base sm:text-lg">
-              Somos um 
+              Somos um
               <br />
               estúdio baiano <br />
               desenvolvendo <br />

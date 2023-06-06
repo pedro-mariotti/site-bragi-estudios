@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { Inter } from 'next/font/google';
 import { AnimatePresence } from 'framer-motion';
 import Head from 'next/head';
-import Main from '@/components/Main';
+import Main from '@/pages/Main';
 import NavBar from '@/components/NavBar';
 
 const inter = Inter({ subsets: ['latin'] });
@@ -16,7 +16,6 @@ export default function Home() {
         <link rel="icon" href="/logo.png" />
       </Head>
       <Main />
-      
     </div>
   );
 }
