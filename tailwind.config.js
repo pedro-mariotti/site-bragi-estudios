@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: [
@@ -13,7 +14,8 @@ module.exports = {
       'white': '#ffffff',
       'black': '#0f0f0f',
       'orange': '#d05424',
-      'purple': '#3e2759'
+      'purple': '#3e2759',
+      'gray-700': '#4a5568',
     },
     extend: {
       backgroundImage: {
