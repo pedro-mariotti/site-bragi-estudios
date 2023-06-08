@@ -47,7 +47,7 @@ const Slider = ({slides})  => {
                   style={{objectFit:"cover", objectPosition:'center'}}
                 />
                  <div className='absolute top-[45%] right-[3.5%] text-purple z-20'>
-                  <div className='inline-block float-right w-5/12 h-[250px] p-4 bg-[#ffffff] shadow-lg font-semibold'>
+                 <div className='inline-block w-[608px] h-[250px] p-4 bg-[#ffffff] shadow-lg font-semibold'>
                     <div className='text-lg'>
                       <span className=' text-orange'>{slide.titulo}</span> | <span>{slide.ano}</span>
                     </div>
@@ -58,17 +58,17 @@ const Slider = ({slides})  => {
               </div>
             ) }
             
-           <div className='absolute top-[82%] right-[3.5%] flex flex-row gap-10 z-20'>
+            <div className='absolute top-[82%] right-[3.5%] flex flex-row gap-3 z-20'>
             <button
                 onClick={previousData}
-                className='w-72 h-12 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
+                className='w-[298px] h-[50px] bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
               >
                 {'<'} JOGO ANTERIOR
               </button>
 
               <button
                 onClick={nextData}
-                className='w-72 h-12 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
+                className='w-[298px] h-[50px] bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]'
               >
                 PRÓXIMO JOGO {'>'}
               </button>
