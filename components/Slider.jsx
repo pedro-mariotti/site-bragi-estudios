@@ -22,38 +22,30 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery" className="relative w-screen h-screen overflow-hidden">
+    <div id="gallery" className="w-screen h-screen overflow-hidden">
       {slides.map((slide, index) => {
         return (
           <div
             key={index}
-            className={
-              index === current
-                ? 'opacity-[1] ease-in duration-200 h-full bg-black flex flex-col items-end pt-24 pr-24 w-full'
-                : 'opacity-0  '
-            }
+            className={index === current ? slide.image : 'opacity-0'}
           >
             {index === current && (
+              // <div className={slide.image}>
               <div className="flex flex-col items-center w-[36rem] gap-7">
                 {/* nao sei pq isso aq não aparece */}
-                <div className=" w-96 h-96">
+                <div className=" w-96 h-96 flex items-center">
                   <img src={slide.logo} alt="game logo" className="" />
                 </div>
-
-                {/* <Image
-                  src={slide.image}
-                  alt="/"
-                  fill
-                  style={{ objectFit: 'cover', objectPosition: 'center' }}
-                /> */}
                 <div className="text-purple z-20 w-full ">
                   <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72">
                     <div className="text-lg">
                       <span className=" text-orange">{slide.titulo}</span> |{' '}
                       <span>{slide.ano}</span>
                     </div>
-                    <div className="text-lg">{slide.descricao}</div>
-                    <div className="">{slide.publisher}</div>
+                    <div className="flex flex-col gap-4">
+                      <div className="text-lg">{slide.descricao}</div>
+                      <div className="">{slide.publisher}</div>
+                    </div>
                   </div>
                 </div>
                 <div className=" flex flex-row gap-3 z-20 w-full">
@@ -72,6 +64,7 @@ const Slider = ({ slides }) => {
                   </button>
                 </div>
               </div>
+              // </div>
             )}
           </div>
         );
