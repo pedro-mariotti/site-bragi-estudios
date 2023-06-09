@@ -1,7 +1,8 @@
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
 import Image from 'next/image';
 import { useState } from 'react';
 import { SliderData } from './SliderData';
-import SideMenu from '@/components/SideMenu';
 import React from 'react';
 
 const Slider = ({ slides }) => {
