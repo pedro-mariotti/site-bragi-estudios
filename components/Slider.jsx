@@ -28,19 +28,15 @@ const Slider = ({ slides }) => {
             key={index}
             className={
               index === current
-                ? 'opacity-[1] ease-in duration-200'
-                : 'opacity-0'
+                ? 'opacity-[1] ease-in duration-200 h-full bg-black flex flex-col items-end pt-24 pr-24 w-full'
+                : 'opacity-0  '
             }
           >
             {index === current && (
-              <div>
+              <div className="flex flex-col items-center w-[36rem] gap-7">
                 {/* nao sei pq isso aq não aparece */}
-                <div className="">
-                  <img
-                    src={slide.logo}
-                    alt="game logo"
-                    className="absolute max-w-7xl right-0"
-                  />
+                <div className=" w-96 h-96">
+                  <img src={slide.logo} alt="game logo" className="" />
                 </div>
 
                 {/* <Image
@@ -49,8 +45,8 @@ const Slider = ({ slides }) => {
                   fill
                   style={{ objectFit: 'cover', objectPosition: 'center' }}
                 /> */}
-                <div className="text-purple z-20">
-                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold">
+                <div className="text-purple z-20 w-full ">
+                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72">
                     <div className="text-lg">
                       <span className=" text-orange">{slide.titulo}</span> |{' '}
                       <span>{slide.ano}</span>
@@ -59,24 +55,23 @@ const Slider = ({ slides }) => {
                     <div className="">{slide.publisher}</div>
                   </div>
                 </div>
+                <div className=" flex flex-row gap-3 z-20 w-full">
+                  <button
+                    onClick={previousData}
+                    className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                  >
+                    {'<'} JOGO ANTERIOR
+                  </button>
+
+                  <button
+                    onClick={nextData}
+                    className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                  >
+                    PRÓXIMO JOGO {'>'}
+                  </button>
+                </div>
               </div>
             )}
-
-            <div className=" flex flex-row gap-3 z-20">
-              <button
-                onClick={previousData}
-                className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]"
-              >
-                {'<'} JOGO ANTERIOR
-              </button>
-
-              <button
-                onClick={nextData}
-                className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2]"
-              >
-                PRÓXIMO JOGO {'>'}
-              </button>
-            </div>
           </div>
         );
       })}
