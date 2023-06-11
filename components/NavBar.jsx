@@ -17,7 +17,7 @@ const NavBar = ()  => {
               <Link className={style.botoes} href='/jogos'>JOGOS</Link> 
             </li>
             <li className='text-center'>
-              <Link className={style.botoes} href='/quemSomos'>QUEM SOMOS</Link>
+              <Link className={style.botoes} href='/quemSomos'>SOBRE</Link>
             </li>
             <li>
               <Link className={style.botoes} href='/contato'>CONTATO</Link>

@@ -45,7 +45,7 @@ export default function SideMenu() {
                   <Link href='/jogos'>JOGOS</Link> 
                 </li>
                 <li>
-                  <Link href='/quemSomos'>QUEM SOMOS</Link>
+                  <Link href='/quemSomos'>SOBRE</Link>
                 </li>
                 <li>
                   <Link href='/contato'>CONTATO</Link>
