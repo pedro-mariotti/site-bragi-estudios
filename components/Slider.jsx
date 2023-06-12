@@ -29,7 +29,7 @@ const Slider = ({ slides }) => {
           >
             {index === current && (
               // <div className={slide.image}>
-              <div className="flex flex-col items-center w-[40rem] gap-7 pr-24 pt-24">
+              <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 pr-24 sm:pl-0 pl-24 sm:pt-24 pt-8">
                 {/* nao sei pq isso aq não aparece */}
                 <div
                   className={
@@ -41,7 +41,7 @@ const Slider = ({ slides }) => {
                   <img src={slide.logo} alt="game logo" className="w-96" />
                 </div>
                 <div className="text-purple z-20 w-full ">
-                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72">
+                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-scroll">
                     <div className="text-lg">
                       <span className=" text-orange">{slide.titulo}</span> |{' '}
                       <span>{slide.ano}</span>
