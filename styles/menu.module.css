@@ -1,8 +1,7 @@
 .menu {
-    @apply top-0 w-56 bg-purple ;
-  }
-  
-.content li {
-@apply flex cursor-pointer p-6 hover:bg-orange text-white text-lg  justify-center;
+  @apply top-0 w-56 bg-purple;
 }
 
+.content li {
+  @apply flex cursor-pointer p-6 hover:bg-orange text-white text-lg  justify-center;
+}

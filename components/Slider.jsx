@@ -1,6 +1,7 @@
 /* eslint-disable react/react-in-jsx-scope */
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
+import SideMenu from './SideMenu';
 import React from 'react';
 
 const Slider = ({ slides }) => {
@@ -20,7 +21,7 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery" className="w-screen h-screen overflow-hidden">
+    <div id="gallery" className="w-screen h-screen">
       {slides.map((slide, index) => {
         return (
           <div
@@ -73,6 +74,7 @@ const Slider = ({ slides }) => {
           </div>
         );
       })}
+      <SideMenu />
 
       {/* <SideMenu/> */}
     </div>
