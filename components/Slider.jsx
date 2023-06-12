@@ -33,8 +33,14 @@ const Slider = ({ slides }) => {
               // <div className={slide.image}>
               <div className="flex flex-col items-center w-[36rem] gap-7">
                 {/* nao sei pq isso aq não aparece */}
-                <div className=" w-96 h-96 flex items-center">
-                  <img src={slide.logo} alt="game logo" className="" />
+                <div
+                  className={
+                    index === 0
+                      ? 'w-full h-96 flex items-center bg-gradient-to-r from-black-500 to-white-500 justify-center' //condicional feita pra editar especificamente so o orbits
+                      : 'w-full h-96 flex items-center justify-center'
+                  }
+                >
+                  <img src={slide.logo} alt="game logo" className="w-96" />
                 </div>
                 <div className="text-purple z-20 w-full ">
                   <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72">
