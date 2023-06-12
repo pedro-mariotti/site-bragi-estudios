@@ -29,7 +29,7 @@ const Slider = ({ slides }) => {
           >
             {index === current && (
               // <div className={slide.image}>
-              <div className="flex flex-col items-center w-[36rem] gap-7">
+              <div className="flex flex-col items-center w-[40rem] gap-7 pr-24">
                 {/* nao sei pq isso aq não aparece */}
                 <div
                   className={
