@@ -41,7 +41,7 @@ const Slider = ({ slides }) => {
                   <img src={slide.logo} alt="game logo" className="w-96" />
                 </div>
                 <div className="text-purple z-20 w-full ">
-                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-scroll">
+                  <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-y-scroll sm:overflow-hidden">
                     <div className="text-lg">
                       <span className=" text-orange">{slide.titulo}</span> |{' '}
                       <span>{slide.ano}</span>
