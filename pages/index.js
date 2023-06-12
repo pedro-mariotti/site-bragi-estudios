@@ -12,7 +12,6 @@ export default function Home() {
     <div>
       <Head>
         <title>Bragi Estúdios</title>
-        <meta name="description" content="Generate" />
         <link rel="icon" href="/logo.png" />
       </Head>
       <Main />

@@ -4,7 +4,7 @@ import style from '@/styles/menu.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from "next/link";
-import Image from 'next/image';
+
 import { BsChevronDown } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
@@ -38,7 +38,7 @@ export default function SideMenu() {
               <ul className={style.content}>
                 <li>
                   <Link href='/'>
-                    <Image src="/logo.png" alt="Logo" width={57} height={59} className={style.tamanhoLogo}/>
+                    <img src="/logo.png" alt="Logo" width={57} height={59} className={style.tamanhoLogo}/>
                   </Link>
                 </li>
                 <li>
@@ -54,6 +54,66 @@ export default function SideMenu() {
                   <Link href='/pressKit'>PRESS KIT</Link>
                 </li>
                 
+                <li className="flex-row flex gap-3">
+                    <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
+                      <span>
+                        <img
+                          src="discord.svg"
+                          alt="discord"
+                          width={50}
+                          height={50}
+                        />
+                      </span>
+                    </Link>
+                    <Link
+                      href="https://www.tiktok.com/@bragiestudios"
+                      target="_blank"
+                    >
+                      <img
+                        src="tiktok.svg"
+                        alt="tiktok"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                    <Link
+                      href="https://www.instagram.com/bragiestudios/"
+                      target="_blank"
+                    >
+                      <img
+                        src="instagram.svg"
+                        alt="insta"
+                        width={45}
+                        height={45}
+                      />
+                    </Link>
+                    <Link
+                      href="https://www.youtube.com/@bragiestudios"
+                      target="_blank"
+                    >
+                      <img
+                        src="youtube.svg"
+                        alt="youtube"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                    <Link
+                      href="https://twitter.com/bragiestudios"
+                      target="_blank"
+                    >
+                      <img
+                        src="twitter.svg"
+                        alt="twitter"
+                        width={50}
+                        height={50}
+                      />
+                    </Link>
+                  </li>
+                  <li className='langs flex-row flex gap-3'>
+                    <a href="#" language="english" className="active">EN</a>
+                    <a href="#" language="ptBR">PT</a>
+                  </li>
               </ul>
             </div>
           </motion.div>

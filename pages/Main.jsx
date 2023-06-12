@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import Image from 'next/image';
+import translate from "../components/translate.js"
 import React from 'react';
 import NavBar from '../components/NavBar';
 
@@ -18,7 +18,11 @@ const Main = () => {
         {/* Conteiner geral dos textos */}
         <div className="flex flex-col pl-12 sm:pl-48 pb-14 sm:pb-28 ">
           <div className="flex flex-col gap-8 text-white">
-            <h1 className="text-4xl sm:text-7xl font-bold mb-2">
+            <div className='langs flex-row flex gap-3 text-2xl'>
+              <a href="#" language="english" className="active">EN</a>
+              <a href="#" language="ptBR">PT</a>
+            </div>
+            <h1 name="title" className="text-4xl sm:text-7xl font-bold mb-2">
               Bragi Estúdios
             </h1>
             <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl">
@@ -41,8 +45,8 @@ const Main = () => {
                 <li>
                   <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
                     <span>
-                      <Image
-                        src="/discord.svg"
+                      <img
+                        src="discord.svg"
                         alt="discord"
                         width={50}
                         height={50}
@@ -55,8 +59,8 @@ const Main = () => {
                     href="https://www.tiktok.com/@bragiestudios"
                     target="_blank"
                   >
-                    <Image
-                      src="/tiktok.svg"
+                    <img
+                      src="tiktok.svg"
                       alt="tiktok"
                       width={50}
                       height={50}
@@ -68,8 +72,8 @@ const Main = () => {
                     href="https://www.instagram.com/bragiestudios/"
                     target="_blank"
                   >
-                    <Image
-                      src="/instagram.svg"
+                    <img
+                      src="instagram.svg"
                       alt="insta"
                       width={45}
                       height={45}
@@ -81,8 +85,8 @@ const Main = () => {
                     href="https://www.youtube.com/@bragiestudios"
                     target="_blank"
                   >
-                    <Image
-                      src="/youtube.svg"
+                    <img
+                      src="youtube.svg"
                       alt="youtube"
                       width={50}
                       height={50}
@@ -94,8 +98,8 @@ const Main = () => {
                     href="https://twitter.com/bragiestudios"
                     target="_blank"
                   >
-                    <Image
-                      src="/twitter.svg"
+                    <img
+                      src="twitter.svg"
                       alt="twitter"
                       width={50}
                       height={50}
