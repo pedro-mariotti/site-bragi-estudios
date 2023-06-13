@@ -124,7 +124,7 @@ export default function SideMenu() {
           className="flex w-72 h-14 p-2 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
           onClick={toggleMenu}
           initial={{ width: '100%' }}
-          animate={{ width: menuOpen ? '8rem' : '4em' }}
+          animate={{ width: menuOpen ? '8rem' : '4rem' }}
           transition={{ duration: 0.5 }}
         >
           {menuOpen ? (
