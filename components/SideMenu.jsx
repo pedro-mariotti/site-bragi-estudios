@@ -18,17 +18,33 @@ export default function SideMenu() {
   };
 
   return (
-    <div className="pt-12 pl-12 h-max w-max">
+    <div className="sm:pt-12 sm:pl-12 h-max sm:w-max w-screen sm:static fixed z-50 self-center sm:self-start ">
+      {/* Ícone do usuário */}
+      <motion.div
+        className="flex h-14 p-2 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
+        onClick={toggleMenu}
+        // initial={{ width: '100%' }}
+        // animate={{ width: menuOpen ? '14rem' : '5rem' }}
+      >
+        {menuOpen ? (
+          <BsChevronDown size="4rem" color="white" cursor="pointer" />
+        ) : (
+          <MdOutlineMenu size="4rem" color="white" cursor="pointer" />
+        )}
+      </motion.div>
       {/* Renderiza o menu apenas se o estado 'menuOpen' for verdadeiro */}
       {menuOpen && (
         <motion.div
           id="burger"
-          className="w-56"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.2 }}
+          // initial={{ width: '100%' }}
+          animate={
+            {
+              // width: menuOpen ? '100%' : '4rem',
+            }
+          }
+          transition={{ duration: 0.5 }}
         >
-          <div id="menu" className="w-56 bg-purple">
+          <div id="menu" className="sm:w-56 w-screen bg-purple">
             <ul className={style.content}>
               <li>
                 <Link href="/">
@@ -99,21 +115,6 @@ export default function SideMenu() {
           </div>
         </motion.div>
       )}
-
-      {/* Ícone do usuário */}
-      <motion.div
-        className="flex h-14 p-2 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
-        onClick={toggleMenu}
-        initial={{ width: '100%' }}
-        animate={{ height: menuOpen ? '8rem' : '4rem' }}
-        transition={{ duration: 0.5 }}
-      >
-        {menuOpen ? (
-          <BsChevronDown size="4rem" color="white" cursor="pointer" />
-        ) : (
-          <MdOutlineMenu size="4rem" color="white" cursor="pointer" />
-        )}
-      </motion.div>
     </div>
   );
 }

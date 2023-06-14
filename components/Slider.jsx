@@ -21,7 +21,7 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery" className="w-screen h-screen">
+    <div id="gallery">
       {slides.map((slide, index) => {
         return (
           <div
@@ -31,7 +31,7 @@ const Slider = ({ slides }) => {
             {index === current && (
               <>
                 <SideMenu />
-                <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 pr-24 sm:pl-0 pl-24 sm:pt-24 pt-8">
+                <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
                   {/* nao sei pq isso aq não aparece */}
                   <div
                     className={
@@ -40,11 +40,15 @@ const Slider = ({ slides }) => {
                         : 'w-full h-96 flex items-center justify-center'
                     }
                   >
-                    <img src={slide.logo} alt="game logo" className="w-96" />
+                    <img
+                      src={slide.logo}
+                      alt="game logo"
+                      className="w-96 h-max"
+                    />
                   </div>
                   <div className="text-purple z-20 w-full ">
                     <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-y-scroll sm:overflow-hidden">
-                      <div className="text-lg">
+                      <div className="text-lg h-max pb-4">
                         <span className=" text-orange">{slide.titulo}</span> |{' '}
                         <span>{slide.ano}</span>
                       </div>
