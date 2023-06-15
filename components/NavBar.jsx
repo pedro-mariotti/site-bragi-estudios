@@ -24,13 +24,13 @@ const NavBar = ()  => {
               <Link className={style.botoes} href='jogos'>{t.navbar.jogos}</Link> 
             </li>
             <li className='text-center'>
-              <Link className={style.botoes} href='quemSomos'>{t.navbar.sobre}</Link>
+              <Link className={style.botoes} href='sobre'>{t.navbar.sobre}</Link>
             </li>
             <li>
               <Link className={style.botoes} href='contato'>{t.navbar.contato}</Link>
             </li>
             <li className='text-center'>
-              <Link className={style.botoes} href='pressKit'>PRESS KIT</Link>
+              <Link className={style.botoes} href='https://bragiestudios.com/press/' target="_blank">PRESS KIT</Link>
             </li>
           </ul>
         

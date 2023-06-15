@@ -43,16 +43,16 @@ export default function SideMenu() {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/jogos">JOGOS</Link>
+                  <Link href="jogos">JOGOS</Link>
                 </li>
                 <li>
-                  <Link href="/quemSomos">SOBRE</Link>
+                  <Link href="sobre">SOBRE</Link>
                 </li>
                 <li>
-                  <Link href="/contato">CONTATO</Link>
+                  <Link href="contato">CONTATO</Link>
                 </li>
                 <li>
-                  <Link href="/pressKit">PRESS KIT</Link>
+                  <Link href='https://bragiestudios.com/press/' target="_blank">PRESS KIT</Link>
                 </li>
 
                 <li className="flex-row flex gap-3">

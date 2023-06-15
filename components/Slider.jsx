@@ -41,7 +41,7 @@ const Slider = ({ slides }) => {
               <>
               
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 pr-24 sm:pl-0 pl-24 sm:pt-24 pt-8">
-                  {/* nao sei pq isso aq não aparece */}
+
                   <div
                     className={
                       index === 0
