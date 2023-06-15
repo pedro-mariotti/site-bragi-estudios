@@ -1,11 +1,7 @@
 
-
 import React from 'react';
 import Head from 'next/head';
 import Main from '@/pages/Main';
-
-
-
 
 export default function Home() {
   return (

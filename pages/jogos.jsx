@@ -1,4 +1,4 @@
-import SideMenu from '@/components/SideMenu';
+
 import Slider from '@/components/Slider';
 import { SliderData } from '@/components/SliderData';
 import React from 'react';

@@ -1,7 +1,8 @@
 import Link from 'next/link';
-import translate from "../components/translate.js"
 import React from 'react';
 import NavBar from '../components/NavBar';
+import { i18n } from '@/components/translate/i18n';
+import SelectLanguage from '@/components/SelectLanguage';
 
 const Main = () => {
   return (
@@ -18,28 +19,26 @@ const Main = () => {
         {/* Conteiner geral dos textos */}
         <div className="flex flex-col pl-12 sm:pl-48 pb-14 sm:pb-28 ">
           <div className="flex flex-col gap-8 text-white">
-            <div className='langs flex-row flex gap-3 text-2xl'>
-              <a href="#" language="english" className="active">EN</a>
-              <a href="#" language="ptBR">PT</a>
-            </div>
+            <SelectLanguage/>
             <h1 name="title" className="text-4xl sm:text-7xl font-bold mb-2">
               Bragi Estúdios
             </h1>
             <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl">
               <img src="/hastag.png" alt="hashtag" />
               <h2 className="text-2xl sm:text-4xl">
-                Nós criamos <br />
-                experiências
+                {i18n.t('titles.criamos')} <br />
+                {i18n.t('titles.exp')}
+                
               </h2>
             </div>
             <h3 className="uppercase font-semibold text-base sm:text-lg">
-              Somos um
-              <br />
-              estúdio baiano <br />
-              desenvolvendo <br />
-              jogos
+              {i18n.t('descricao.linha1')}<br />
+              {i18n.t('descricao.linha2')}<br />
+              {i18n.t('descricao.linha3')}<br />
+              {i18n.t('descricao.linha4')}
             </h3>
             <div>
+              
               {/* Redes sociais */}
               <ul className="flex-row flex gap-8">
                 <li>
