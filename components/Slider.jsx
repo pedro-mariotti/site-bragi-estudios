@@ -2,9 +2,16 @@
 /* eslint-disable react/prop-types */
 import { useState } from 'react';
 import SideMenu from './SideMenu';
+import { useRouter } from 'next/router';
 import React from 'react';
+import en from '../locales/en.js';
+import pt from '../locales/pt.js';
 
 const Slider = ({ slides }) => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : pt;
+
   const [current, setCurrent] = useState(0);
   const length = slides.length;
 
@@ -23,13 +30,16 @@ const Slider = ({ slides }) => {
   return (
     <div id="gallery" className="w-screen h-screen">
       {slides.map((slide, index) => {
+        
         return (
           <div
             key={index}
             className={index === current ? slide.image : 'hidden'}
           >
             {index === current && (
+              
               <>
+              
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 pr-24 sm:pl-0 pl-24 sm:pt-24 pt-8">
                   {/* nao sei pq isso aq não aparece */}
                   <div
@@ -48,8 +58,9 @@ const Slider = ({ slides }) => {
                         <span>{slide.ano}</span>
                       </div>
                       <div className="flex flex-col gap-4">
-                        <div className="text-lg">{slide.descricao}</div>
-                        <div className="">{slide.publisher}</div>
+                        <div className="text-lg">{t[slide.descricao]}</div>
+
+                        <div className="">{t[slide.publisher]}</div>
                       </div>
                     </div>
                   </div>

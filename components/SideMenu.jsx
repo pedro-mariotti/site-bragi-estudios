@@ -4,6 +4,7 @@ import style from '@/styles/menu.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import SelectLanguage from '@/components/SelectLanguage';
 
 import { BsChevronDown } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
@@ -106,12 +107,7 @@ export default function SideMenu() {
                   </Link>
                 </li>
                 <li className="langs flex-row flex gap-3">
-                  <a href="#" language="english" className="active">
-                    EN
-                  </a>
-                  <a href="#" language="ptBR">
-                    PT
-                  </a>
+                  <SelectLanguage/>
                 </li>
               </ul>
             </div>

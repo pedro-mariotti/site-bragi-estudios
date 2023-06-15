@@ -1,9 +1,16 @@
 import style from '@/styles/navbar.module.css'
 import Link from "next/link";
+import { useRouter } from 'next/router';
+import en from '../locales/en.js';
+import pt from '../locales/pt.js';
 
 import React from "react";
 
 const NavBar = ()  => {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : pt;
+
   return (
     <div>
       <nav className={style.navbar}>
@@ -14,13 +21,13 @@ const NavBar = ()  => {
               </Link>
             </li>
             <li>
-              <Link className={style.botoes} href='jogos'>JOGOS</Link> 
+              <Link className={style.botoes} href='jogos'>{t.navbar.jogos}</Link> 
             </li>
             <li className='text-center'>
-              <Link className={style.botoes} href='quemSomos'>SOBRE</Link>
+              <Link className={style.botoes} href='quemSomos'>{t.navbar.sobre}</Link>
             </li>
             <li>
-              <Link className={style.botoes} href='contato'>CONTATO</Link>
+              <Link className={style.botoes} href='contato'>{t.navbar.contato}</Link>
             </li>
             <li className='text-center'>
               <Link className={style.botoes} href='pressKit'>PRESS KIT</Link>

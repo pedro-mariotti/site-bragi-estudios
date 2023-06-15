@@ -1,20 +1,25 @@
 import React from 'react';
-
-const I18N_STORAGE_KEY = 'i18nextLng';
+import { useRouter } from 'next/router';
 
 const SelectLanguage = () => {
+    const router = useRouter();
+    const { locale } = router;
     
-    const handleSelectChange = (event) => {
-        const language = event.target.getAttribute('language');
-        localStorage.setItem(I18N_STORAGE_KEY, language);
-        // eslint-disable-next-line no-self-assign
-        window.location = window.location;
-    }
+    const changeLanguage = (e) => {
+        const locale = e.target.value;
+        router.push(router.pathname, router.asPath, { locale });
+    };
 
   return (
     <div className='langs flex-row flex gap-3 text-2xl'>
-        <span onClick={handleSelectChange} language="en-US" className="active">EN</span>
-        <span onClick={handleSelectChange} language="pt-BR">PT</span>
+        <select
+            onChange={changeLanguage}
+            defaultValue={locale}
+            className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+          >
+            <option className="text-black" value="en">EN</option>
+            <option className="text-black" value="pt">PT-BR</option>
+          </select>
     </div>
   );
 };
