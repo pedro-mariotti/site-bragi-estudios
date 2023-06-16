@@ -21,7 +21,7 @@ const Sobre = () => {
       if (buttonId === 'historia') {
         return (
           <div>
-            <h1 className="text-lg font-bold text-orange">{t.sobre.historia.title}</h1>
+            <h1 className="text-lg font-medium text-orange">{t.sobre.historia.title}</h1>
             <p className="text-base font-medium">
               {t.sobre.historia.linha1}<br/><br/>
               {t.sobre.historia.linha2}<br/><br/>
@@ -32,13 +32,13 @@ const Sobre = () => {
       } else if (buttonId === 'pilares') {
         return (
           <div>
-            <h1 className="text-lg font-bold text-orange">{t.sobre.missao.title}</h1>
+            <h1 className="text-lg font-medium text-orange">{t.sobre.missao.title}</h1>
             <p className="text-base font-medium">
               {t.sobre.missao.texto}<br/><br/> 
             </p>
-            <h2 className="text-lg font-bold text-orange">{t.sobre.visao.title}</h2>
+            <h2 className="text-lg font-medium text-orange">{t.sobre.visao.title}</h2>
             <p className="text-base font-medium"> {t.sobre.visao.texto}</p><br />
-            <h2 className="text-lg font-bold text-orange">{t.sobre.valores.title}</h2>
+            <h2 className="text-lg font-medium text-orange">{t.sobre.valores.title}</h2>
             <p className="text-base font-medium">{t.sobre.valores.criatividade}</p>
             <p className="text-base font-medium">{t.sobre.valores.construimos}</p>
             <p className="text-base font-medium">{t.sobre.valores.responsabilidade}</p>
@@ -48,21 +48,19 @@ const Sobre = () => {
       } else {
         return (
           <div>
-            <h1 className="text-lg font-bold text-orange">{t.sobre.time}</h1>
-          
-            <h1 className="text-base font-bold text-orange">Irlan Bragi</h1>
+            <h1 className="text-base font-medium text-orange">Irlan Bragi</h1>
             <p>CEO, GameDev & GameDesigner</p><br/>
 
-            <h1 className="text-base font-bold text-orange">Eduarda Bango</h1>
+            <h1 className="text-base font-medium text-orange">Eduarda Bango</h1>
             <p>Game Producer</p><br/>
 
-            <h1 className="text-base font-bold text-orange">Júlia Carneiro</h1>
+            <h1 className="text-base font-medium text-orange">Júlia Carneiro</h1>
             <p>GameDev Trainee</p><br/>
 
-            <h1 className="text-base font-bold text-orange">Pedro Mariotti</h1>
+            <h1 className="text-base font-medium text-orange">Pedro Mariotti</h1>
             <p>GameDev Trainee</p><br/>
 
-            <h1 className="text-base font-bold text-orange">Alef Torquato</h1>
+            <h1 className="text-base font-medium text-orange">Alef Torquato</h1>
             <p>GameDev Trainee & 2D Artist Trainee</p>
           </div>
         );
@@ -87,7 +85,7 @@ const Sobre = () => {
                 </div>
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
                   <div className="text-purple z-20 w-full ">
-                    <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-96 overflow-y-scroll sm:overflow-hidden">
+                    <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semimedium w-full h-96 overflow-y-scroll sm:overflow-hidden">
                       <div className="text-lg h-max pb-4">
                         <span className=" text-orange"></span>
                       </div>
@@ -96,29 +94,50 @@ const Sobre = () => {
                       </div>
                     </div>
                   </div>
-                  <div className=" flex flex-row gap-3 z-20 w-full">
+                  <div className=" flex flex-row gap-3 z-20 w-full ">
                   <button
                       id='historia'
                       onClick={handleButtonClick}
-                      className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                      className="py-4 bg-[#3e2759] hover:bg-orange text-white transform cursor-pointer select-none z-[2] w-1/2 flex flex-col justify-center items-center"
                   >
+                      <img
+                          src="/icon_historia.svg"
+                          alt="discord"
+                          width={60}
+                          height={60}
+                          className='mb-2'
+                      />
                       {t.sobre.botoes.historia}
                   </button>
 
                   <button
                       id='pilares'
                       onClick={handleButtonClick}
-                      className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                      className="py-4 bg-[#3e2759]  hover:bg-orange text-white transform cursor-pointer select-none z-[2] w-1/2 flex flex-col justify-center items-center"
                   >
+                      <img
+                          src="/icon_pilares.svg"
+                          alt="discord"
+                          width={60}
+                          height={60}
+                          className='mb-2'
+                      />
                       {t.sobre.botoes.pilares} 
                   </button>
 
                   <button
                       id='time'
                       onClick={handleButtonClick}
-                      className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                      className="py-4 bg-[#3e2759]  hover:bg-orange text-white transform cursor-pointer select-none z-[2] w-1/2 flex flex-col justify-center items-center"
                   >
-                    {t.sobre.botoes.time} 
+                    <img
+                        src="/icon_time.svg"
+                        alt="discord"
+                        width={60}
+                        height={60}
+                        className='mt-2 mb-4'
+                      />
+                    {t.sobre.botoes.time}
                   </button>
                     
                   </div>

@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
+import Link from 'next/link';
 import SideMenu from './SideMenu';
 
 
@@ -40,7 +41,7 @@ const Slider = ({ slides }) => {
                         : 'w-full h-96 flex items-center justify-center'
                     }
                   >
-                    <img src={slide.logo} alt="game logo" className="w-96 h-max" />
+                    <svg src={slide.logo} alt="game logo" className="w-96 h-max" />
                   </div>
                   <div className="text-purple z-20 w-full">
                     <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-y-scroll sm:overflow-hidden">
@@ -55,8 +56,33 @@ const Slider = ({ slides }) => {
                           {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt}
                         </div>
                       </div>
+                      <div className='flex flex-row gap-2 '>
+                      {slide.link_android !== '' && (
+                        <Link href={slide.link_android} target="_blank">
+                        <svg
+                          src="/android.svg"
+                          alt="Android Logo"
+                          width={60}
+                          height={60}
+                          
+                        />
+                        </Link>
+                      )}
+                      {slide.link_apple !== '' && (
+                        <Link href={slide.link_apple} target="_blank">
+                          <svg
+                            src="/apple.svg"
+                            alt="Apple Logo"
+                            width={60}
+                            height={60} 
+                          />
+                        </Link>
+                      )}
+                      </div>
                     </div>
+
                   </div>
+                  
                   <div className="flex flex-row gap-3 z-20 w-full">
                     <button
                       onClick={previousData}

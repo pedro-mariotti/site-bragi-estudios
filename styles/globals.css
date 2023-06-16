@@ -18,16 +18,4 @@ html {
 .main{
   color: #fff;
   text-shadow: 5px 5px #00000033;
-  
-}
-
-#svgSombra{
-  filter:drop-shadow(10px 10px 10px #00000033);
-}
-
-a:hover{
-  font-weight: 650;
-}
-a.active{
-  font-weight: 650;
 }

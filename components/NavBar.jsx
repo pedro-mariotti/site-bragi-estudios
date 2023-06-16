@@ -1,5 +1,6 @@
 import style from '@/styles/navbar.module.css'
 import Link from "next/link";
+import { useState } from 'react';
 import { useRouter } from 'next/router';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
@@ -7,6 +8,16 @@ import pt from '../locales/pt.js';
 import React from "react";
 
 const NavBar = ()  => {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const handleMouseOver = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseOut = () => {
+    setIsHovered(false);
+  };
+
   const router = useRouter();
   const { locale } = router;
   const t = locale === 'en' ? en : pt;
@@ -17,7 +28,9 @@ const NavBar = ()  => {
           <ul className={style.gridBotoes}>
             <li className={style.colunaLogo}>
               <Link href='/'>
-                <img src="logo.png" alt="Logo" width={64} height={50} className={style.tamanhoLogo}/>
+                <img src={!isHovered ? './brg_icon.svg' : './brg_icon_houver_main.svg'} alt="Logo" width={64} height={50} className={style.tamanhoLogo}
+                onMouseOver={handleMouseOver}
+                onMouseOut={handleMouseOut}/>
               </Link>
             </li>
             <li>

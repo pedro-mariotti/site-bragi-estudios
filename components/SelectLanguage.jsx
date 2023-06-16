@@ -1,45 +1,73 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from 'react';
+import React, { useState } from 'react';
+import HoverableImage from '../components/Hover';
 
 const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
-  const changeLanguage = (e) => {
-    const selectedLocale = e.target.value;
-    setSelectedLanguage(selectedLocale);
+
+  const [isHovered, setIsHovered] = useState(false);
+  const isCheckedPT = selectedLanguage === 'pt';
+  const isCheckedEN = selectedLanguage === 'en';
+
+  const handleMouseEnter = () => {
+    setIsHovered(true);
+  };
+
+  const handleMouseLeave = () => {
+    setIsHovered(false);
+  };
+
+  const handleClick = (e) => {
+    const selectedLanguage = e.target.value;
+    setSelectedLanguage(selectedLanguage);
   };
 
   return (
     <div className="langs flex-row flex gap-3 text-2xl">
       <label htmlFor="pt" className="relative">
         <input
-          onChange={changeLanguage}
+          onChange={handleClick}
           type="radio"
           id="pt"
           name="idioma"
           value="pt"
           className="hidden"
+          checked={isCheckedPT}
         />
-       <img
-          id="pt-img"
-          src={selectedLanguage === 'pt' ? '/pt_checked.svg' : '/pt.svg'}
+        <HoverableImage
+          src={{
+            default: isCheckedPT ? '/pt_checked.svg' : '/pt.svg',
+            hover: '/pt_hover.svg',
+          }}
           alt="Português"
-          className="w-10 cursor-pointer mr-2"
+          width={50}
+          height={50}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+          
         />
       </label>
 
       <label htmlFor="en" className="relative">
         <input
-          onChange={changeLanguage}
+          onChange={handleClick}
           type="radio"
           id="en"
           name="idioma"
           value="en"
           className="hidden"
+          checked={isCheckedEN}
         />
-         <img
-          id="en-img"
-          src={selectedLanguage === 'en' ? '/en_checked.svg' : '/en.svg'}
+        <HoverableImage
+          src={{
+            default: isCheckedEN ? '/en_checked.svg' : '/en.svg',
+            hover: '/en_hover.svg',
+          }}
           alt="English"
-          className="w-10 cursor-pointer"
+          width={50}
+          height={50}
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
         />
       </label>
     </div>

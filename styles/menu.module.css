@@ -5,3 +5,7 @@
 .content li {
   @apply flex cursor-pointer p-6 hover:bg-orange text-white text-lg  justify-center;
 }
+
+.content2 li {
+  @apply flex cursor-pointer p-6 text-white text-lg  justify-center;
+}

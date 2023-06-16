@@ -10,6 +10,8 @@ export const SliderData = [
     publisher_pt: 'Publicado pela Magalu Games.',
     descricao_en: 'You can be an orbit conqueror. Jump from one orbit to another while avoiding the red orbits. Unlock new levels by collecting the yellow and blue stars. Be careful not to send your spaceship into space!',
     publisher_en: 'Published by Magalu Games',
+    link_android:'https://play.google.com/store/apps/details?id=com.Bragi.Magalu.Orbits ',
+    link_apple: 'https://apps.apple.com/br/app/orbits-conqueror/id1628822827 ',
     
   },
   {
@@ -22,6 +24,8 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: 'The goal is to quickly identify which element has a different color. Guess many consecutive colors correctly to earn offensive points and increase your score!',
     publisher_en: '',
+    link_android:'https://play.google.com/store/apps/details?id=com.Freyr.OtherColor ',
+    link_apple: 'https://bragiestudios.com/HTML5GAMES/OtherColor_BETA/ ',
   },
   {
     titulo: '100NHAS Fugaz',
@@ -33,6 +37,8 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: '100NHAS Fugaz is a spin-off developed during the Covid-19 pandemic, featuring 20 new puzzles for you and your family to solve at home. #stayathome',
     publisher_en: '',
+    link_android:'https://play.google.com/store/apps/details?id=com.Bragi.Magalu.Orbits ',
+    link_apple: 'https://apps.apple.com/br/app/orbits-conqueror/id1628822827 ',
   },
   {
     titulo: 'Building Sort',
@@ -44,6 +50,8 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: 'Building Sort is a Puzzle Sorting game where you must organize the floors of buildings by swapping their positions. Strategically swap the buildings to bring order to the chaos.',
     publisher_en: '',
+    link_android:'https://play.google.com/store/apps/details?id=com.Bragi.Magalu.Orbits ',
+    link_apple: 'https://apps.apple.com/br/app/orbits-conqueror/id1628822827 ',
   },
   {
     titulo: 'TOC',
@@ -55,6 +63,8 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: 'A simple and fun arcade game: Click on the indicated targets to earn points. But be careful, if you click on the wrong targets, you will lose points!',
     publisher_en: '',
+    link_android:'https://play.google.com/store/apps/details?id=com.Bragi.Magalu.Orbits ',
+    link_apple: 'https://apps.apple.com/br/app/orbits-conqueror/id1628822827 ',
   },
   {
     titulo: 'Wood Cutter',
@@ -66,6 +76,8 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: 'A game developed for the Magalu Game Jam in less than 48 hours! Wood Cutter is a game of precision and attention. Create the best strategy to accurately cut a wooden block using the available templates - before your blades run out.',
     publisher_en: '',
+    link_android:' https://bragiestudios.itch.io/wood-cutter ',
+    link_apple: 'https://play.google.com/store/apps/details?id=com.Freyr.WoodCutter ',
   },
   {
     titulo: 'Mooh',
@@ -77,5 +89,7 @@ export const SliderData = [
     publisher_pt: '',
     descricao_en: "A cow is abducted to a strange planet and placed in a prison. Upon escaping, it begins to explore the new world, seeking ways to return home. It's an adventure and puzzle game in a 360° platform.",
     publisher_en: '',
+    link_android:'',
+    link_apple: '',
   },
 ];
