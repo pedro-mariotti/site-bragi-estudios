@@ -31,7 +31,7 @@ const Main = () => {
             <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet"></link>
             <h1 id="titleMain" className="text-5xl sm:text-7xl font-bold mb-2"> Bragi Estúdios</h1>
             <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl item">
-              <img className='w-[4.5rem]' id='svg' src="/hashtag1.svg" alt="hashtag"/>
+              <img className='w-[4.5rem]' id='svg' src="/hashtag.svg" alt="hashtag"/>
               <h2  className="text-2xl sm:text-4xl pb-[7px]">
                 {t.titles.criamos} <br />
                 {t.titles.exp}

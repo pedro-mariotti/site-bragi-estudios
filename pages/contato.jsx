@@ -11,7 +11,7 @@ const Contato = () => {
 
   return (
     <div id="gallery">
-      <div className="flex grid lg:grid-cols-8 flex-col h-screen bg-[url('../public/bg-preto.png')] bg-cover bg-top">
+      <div className="flex grid lg:grid-cols-8 flex-col h-screen bg-preto bg-cover bg-top">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
@@ -41,7 +41,7 @@ const Contato = () => {
             </div>
           </div>
           <div className=" flex flex-row gap-3 z-20 w-full">
-            <ul className="flex-row flex gap-8 items-center">
+            <ul className="m-4 flex-row flex gap-8 items-center">
               <li>
                 <a
                   href="https://discord.gg/9C4Wh8TYef"

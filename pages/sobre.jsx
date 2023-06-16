@@ -97,7 +97,7 @@ const Sobre = () => {
 
   return (
     <div id="gallery">
-      <div className="lg:h-screen h-max lg:grid w-full bg-[url('../public/bg-preto.png')] bg-cover bg-top md:grid-cols-8">
+      <div className="lg:h-screen h-max lg:grid w-full bg-preto bg-cover bg-top md:grid-cols-8">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}

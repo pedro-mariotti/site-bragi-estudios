@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Bragi Estúdios</title>
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/brg_icon.svg" />
       </Head>
       <Main />
     </div>

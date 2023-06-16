@@ -29,7 +29,7 @@ module.exports = {
     function ({ addComponents }) {
       addComponents({
         '.bg-bragi-roxo': {
-          backgroundImage: "url('../public/bg-roxo.png')",
+          backgroundImage: "url('../public/bg-roxo.jpg')",
         },
       }, {
         // define a camada personalizada aqui
