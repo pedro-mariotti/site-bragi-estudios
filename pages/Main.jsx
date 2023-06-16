@@ -122,7 +122,7 @@ const Main = () => {
           </div>
         </div>
       </div>
-      <NavBar />
+      <NavBar selectedLanguage={selectedLanguage} setSelectedLanguage={setSelectedLanguage}/>
     </div>
   );
 };

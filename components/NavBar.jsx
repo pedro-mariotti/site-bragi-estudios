@@ -1,13 +1,16 @@
+/* eslint-disable react/prop-types */
 import style from '@/styles/navbar.module.css'
 import Link from "next/link";
 import { useState } from 'react';
-import { useRouter } from 'next/router';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
 
 import React from "react";
 
-const NavBar = ()  => {
+const NavBar = ({ selectedLanguage })  => {
+  
+  const t = selectedLanguage === 'en' ? en : pt;
+
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseOver = () => {
@@ -17,10 +20,6 @@ const NavBar = ()  => {
   const handleMouseOut = () => {
     setIsHovered(false);
   };
-
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === 'en' ? en : pt;
 
   return (
     <div>
