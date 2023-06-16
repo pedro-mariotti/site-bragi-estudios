@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import HoverableImage from '../components/Hover'
+import HoverableImage from '../components/Hover';
 import style from '@/styles/menu.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -12,10 +12,9 @@ import SelectLanguage from '@/components/SelectLanguage';
 import { BsChevronUp } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
-export const minhaVariavel = "qualquerPorra";
+export const minhaVariavel = 'qualquerPorra';
 
 export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
-  
   const t = selectedLanguage === 'en' ? en : pt;
 
   // Estado para controlar a abertura e fechamento do menu
@@ -27,7 +26,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
   };
 
   return (
-    <div className="sm:pt-12 sm:pl-12 h-max sm:w-max w-screen sm:static fixed z-50 self-center sm:self-start ">
+    <div className="sm:pt-12 sm:pl-12 h-max sm:w-max w-screen lg:static fixed z-50 self-center sm:self-start ">
       {/* Ícone do usuário */}
       <motion.div
         className="flex h-14 p-2 mb-1 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
@@ -76,86 +75,87 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                 <Link href="/contato">{t.navbar.contato}</Link>
               </li>
               <li>
-              <Link href='https://bragiestudios.com/press/' target="_blank">PRESS KIT</Link>
+                <Link href="https://bragiestudios.com/press/" target="_blank">
+                  PRESS KIT
+                </Link>
               </li>
-
             </ul>
             <ul className={style.content2}>
               <li className="flex-row flex gap-3 items-center">
-                  <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
-                    <span>
+                <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
+                  <span>
                     <HoverableImage
                       src={{
                         default: '/redes_sociais/discord.svg',
-                        hover: '/redes_sociais/discord_hover.svg'
+                        hover: '/redes_sociais/discord_hover.svg',
                       }}
                       alt="discord"
                       width={60}
                       height={60}
                     />
-                    </span>
-                  </Link>
-                  <Link
-                    href="https://www.tiktok.com/@bragiestudios"
-                    target="_blank"
-                  >
-                    <HoverableImage
-                        src={{
-                          default: '/redes_sociais/tt.svg',
-                          hover: '/redes_sociais/tt_hover.svg'
-                        }}
-                        alt="tiktok"
-                        width={50}
-                        height={50}
-                      />
-                  </Link>
-                  <Link
-                    href="https://www.instagram.com/bragiestudios/"
-                    target="_blank"
-                  >
-                    <HoverableImage
-                      src={{
-                        default: '/redes_sociais/ig.svg',
-                        hover: '/redes_sociais/ig_hover.svg'
-                      }}
-                      alt="instagram"
-                      width={55}
-                      height={55}
-                      />
-                  </Link>
-                  <Link
-                    href="https://www.youtube.com/@bragiestudios"
-                    target="_blank"
-                  >
-                    <HoverableImage
-                        src={{
-                          default: '/redes_sociais/yt.svg',
-                          hover: '/redes_sociais/yt_hover.svg'
-                        }}
-                        alt="youtube"
-                        width={65}
-                        height={65}
-                      />
-                  </Link>
-                  <Link href="https://twitter.com/bragiestudios" target="_blank">
-                    <HoverableImage
-                          src={{
-                            default: '/redes_sociais/twitter.svg',
-                            hover: '/redes_sociais/twitter_hover.svg'
-                          }}
-                          alt="twiter"
-                          width={60}
-                          height={60}
-                        />
-                  </Link>
-                </li>
-                <li className="langs flex-row flex gap-3">
-                  <SelectLanguage
-                    selectedLanguage={selectedLanguage}
-                    setSelectedLanguage={setSelectedLanguage}
+                  </span>
+                </Link>
+                <Link
+                  href="https://www.tiktok.com/@bragiestudios"
+                  target="_blank"
+                >
+                  <HoverableImage
+                    src={{
+                      default: '/redes_sociais/tt.svg',
+                      hover: '/redes_sociais/tt_hover.svg',
+                    }}
+                    alt="tiktok"
+                    width={50}
+                    height={50}
                   />
-                </li>
-                </ul>
+                </Link>
+                <Link
+                  href="https://www.instagram.com/bragiestudios/"
+                  target="_blank"
+                >
+                  <HoverableImage
+                    src={{
+                      default: '/redes_sociais/ig.svg',
+                      hover: '/redes_sociais/ig_hover.svg',
+                    }}
+                    alt="instagram"
+                    width={55}
+                    height={55}
+                  />
+                </Link>
+                <Link
+                  href="https://www.youtube.com/@bragiestudios"
+                  target="_blank"
+                >
+                  <HoverableImage
+                    src={{
+                      default: '/redes_sociais/yt.svg',
+                      hover: '/redes_sociais/yt_hover.svg',
+                    }}
+                    alt="youtube"
+                    width={65}
+                    height={65}
+                  />
+                </Link>
+                <Link href="https://twitter.com/bragiestudios" target="_blank">
+                  <HoverableImage
+                    src={{
+                      default: '/redes_sociais/twitter.svg',
+                      hover: '/redes_sociais/twitter_hover.svg',
+                    }}
+                    alt="twiter"
+                    width={60}
+                    height={60}
+                  />
+                </Link>
+              </li>
+              <li className="langs flex-row flex gap-3">
+                <SelectLanguage
+                  selectedLanguage={selectedLanguage}
+                  setSelectedLanguage={setSelectedLanguage}
+                />
+              </li>
+            </ul>
           </div>
         </motion.div>
       )}
