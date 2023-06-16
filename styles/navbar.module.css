@@ -15,5 +15,5 @@
 }
 
 .botoes {
-  @apply text-lg text-white hover:text-[#d05424];
+  @apply text-lg text-white hover:text-[#d05424] sm:pr-24;
 }

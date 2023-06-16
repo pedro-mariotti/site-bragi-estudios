@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_2" data-name="Camada 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.87 29.1">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+    </style>
+  </defs>
+  <g id="Camada_1-2" data-name="Camada 1">
+    <path id="Down_Arrow" data-name="Down Arrow" class="cls-1" d="M0,14.55C0,14.21,.13,13.87,.39,13.61L13.61,.39c.52-.52,1.35-.52,1.87,0s.52,1.35,0,1.87L3.19,14.55l12.29,12.29c.52,.52,.52,1.35,0,1.87s-1.35,.52-1.87,0L.39,15.48c-.26-.26-.39-.6-.39-.94H0Z"/>
+  </g>
+</svg>

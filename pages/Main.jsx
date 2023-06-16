@@ -18,7 +18,7 @@ const Main = () => {
       {/* Logo background */}
       <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
         <div className="pt-8 self-end lg:self-start">
-          <img src="/logo-grande.png" alt="logo" className="w-72 lg:w-96" />
+          <img src="/logo_main.svg" alt="logo" className="w-72 lg:w-96" />
         </div>
 
         {/* Conteiner geral dos textos */}

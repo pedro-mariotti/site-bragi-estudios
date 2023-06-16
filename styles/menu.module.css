@@ -1,5 +1,5 @@
 .menu {
-  @apply top-0 w-56 bg-purple;
+  @apply top-0 w-screen sm:w-96 bg-purple;
 }
 
 .content li {

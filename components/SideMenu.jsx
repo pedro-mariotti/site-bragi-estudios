@@ -30,7 +30,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
     <div className="sm:pt-12 sm:pl-12 h-max sm:w-max w-screen sm:static fixed z-50 self-center sm:self-start ">
       {/* Ícone do usuário */}
       <motion.div
-        className="flex h-14 p-2 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
+        className="flex h-14 p-2 mb-1 bg-[#3e2759] text-white transform cursor-pointer justify-center items-center"
         onClick={toggleMenu}
         // initial={{ width: '100%' }}
         // animate={{ width: menuOpen ? '14rem' : '5rem' }}
@@ -53,7 +53,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
           }
           transition={{ duration: 0.5 }}
         >
-          <div id="menu" className="sm:w-56 w-screen bg-purple ">
+          <div id="menu" className={style.menu}>
             <ul className={style.content}>
               <li>
                 <Link href="/">

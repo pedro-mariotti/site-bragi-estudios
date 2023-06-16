@@ -41,7 +41,7 @@ const Slider = ({ slides }) => {
                         : 'w-full h-96 flex items-center justify-center'
                     }
                   >
-                    <svg src={slide.logo} alt="game logo" className="w-96 h-max" />
+                    <img src={slide.logo} alt="game logo" className="w-96 h-max" />
                   </div>
                   <div className="text-purple z-20 w-full">
                     <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-72 overflow-y-scroll sm:overflow-hidden">
@@ -56,11 +56,11 @@ const Slider = ({ slides }) => {
                           {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt}
                         </div>
                       </div>
-                      <div className='flex flex-row gap-2 '>
+                      <div className='flex flex-row-reverse gap-2 items-center p-5'>
                       {slide.link_android !== '' && (
                         <Link href={slide.link_android} target="_blank">
-                        <svg
-                          src="/android.svg"
+                        <img
+                          src="./Plataformas/android.svg"
                           alt="Android Logo"
                           width={60}
                           height={60}
@@ -70,9 +70,29 @@ const Slider = ({ slides }) => {
                       )}
                       {slide.link_apple !== '' && (
                         <Link href={slide.link_apple} target="_blank">
-                          <svg
-                            src="/apple.svg"
+                          <img
+                            src="./Plataformas/ios.svg"
                             alt="Apple Logo"
+                            width={60}
+                            height={60} 
+                          />
+                        </Link>
+                      )}
+                      {slide.link_html !== '' && (
+                        <Link href={slide.link_html} target="_blank">
+                          <img
+                            src="./Plataformas/html5.svg"
+                            alt="Html5"
+                            width={60}
+                            height={60} 
+                          />
+                        </Link>
+                      )}
+                      {slide.link_itchio !== '' && (
+                        <Link href={slide.link_itchio} target="_blank">
+                          <img
+                            src="./Plataformas/itchio.svg"
+                            alt="Html5"
                             width={60}
                             height={60} 
                           />
@@ -84,18 +104,21 @@ const Slider = ({ slides }) => {
                   </div>
                   
                   <div className="flex flex-row gap-3 z-20 w-full">
-                    <button
-                      onClick={previousData}
-                      className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
-                    >
-                      {'<'} JOGO ANTERIOR
-                    </button>
+                  <button
+                    onClick={previousData}
+                    className="py-4 bg-[#3e2759] hover:bg-orange text-white transform cursor-pointer select-none z-[2] w-1/2 p-7 flex items-center justify-center"
+                  >
+                    <img src="previous_game.svg" width={15} height={15} alt="anterior" />
+                    <span className="flex-grow text-center hidden sm:block">JOGO ANTERIOR</span>
+                  </button>
+
 
                     <button
                       onClick={nextData}
-                      className="py-4 bg-[#3e2759] text-white transform cursor-pointer select-none z-[2] w-1/2"
+                      className="py-4 bg-[#3e2759] hover:bg-orange text-white transform cursor-pointer select-none z-[2] w-1/2 p-7 flex items-center justify-center"
                     >
-                      PRÓXIMO JOGO {'>'}
+                      <span className="flex-grow text-center hidden sm:block">PRÓXIMO JOGO</span>
+                      <img src="next_game.svg" width={15} height={15} alt="proximo" />
                     </button>
                   </div>
                 </div>
