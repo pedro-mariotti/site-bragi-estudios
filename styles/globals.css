@@ -7,6 +7,14 @@ html {
   font-family: 'Montserrat', sans-serif;
 }
 
+#titleMain{
+  font-family: 'century gothic', sans-serif;
+}
+
+#subTitleMain{
+  text-shadow: 3.5px 3.5px #0003
+}
+
 .bg-bragi-roxo {
   background-image: url('../public/bg-roxo.png');
 }

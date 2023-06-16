@@ -31,7 +31,7 @@ const Contato = () => {
                         {t.contato.title}
                       </div><br/>
                       <div className="flex flex-col gap-4 text-2xl text-white">{t.contato.div1}</div><br/>
-                      <div className="flex flex-col gap-4 text-2xl text-white">team@bragiestudios.com</div>
+                      <a href="mailto:team@bragiestudios.com" className="flex flex-col gap-4 text-2xl text-white hover:text-[#d05424]">team@bragiestudios.com</a>
                     </div>
                   </div>
                   <div className=" flex flex-row gap-3 z-20 w-full">

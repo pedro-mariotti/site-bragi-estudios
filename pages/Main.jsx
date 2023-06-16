@@ -28,17 +28,16 @@ const Main = () => {
               selectedLanguage={selectedLanguage}
               setSelectedLanguage={setSelectedLanguage}
             />
-            <h1 name="title" className="text-4xl sm:text-7xl font-bold mb-2">
-              Bragi Estúdios
-            </h1>
-            <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl">
-              <img className='w-28' id='svg' src="/hashtag.svg" alt="hashtag"/>
-              <h2 className="text-2xl sm:text-4xl">
+            <link href="https://fonts.cdnfonts.com/css/century-gothic" rel="stylesheet"></link>
+            <h1 id="titleMain" className="text-5xl sm:text-7xl font-bold mb-2"> Bragi Estúdios</h1>
+            <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl item">
+              <img className='w-[4.5rem]' id='svg' src="/hashtag1.svg" alt="hashtag"/>
+              <h2  className="text-2xl sm:text-4xl pb-[7px]">
                 {t.titles.criamos} <br />
                 {t.titles.exp}
               </h2>
             </div>
-            <h3 className="uppercase font-semibold text-base sm:text-lg">
+            <h3 id='subTitleMain' className="uppercase font-semibold text-base sm:text-lg">
               {t.descricao.linha1}
               <br />
               {t.descricao.linha2}
