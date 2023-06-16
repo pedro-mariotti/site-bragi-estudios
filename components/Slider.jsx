@@ -1,11 +1,10 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from 'react';
 import SideMenu from './SideMenu';
-//import en from '../locales/en.js';
-//import pt from '../locales/pt.js';
+
 
 const Slider = ({ slides }) => {
-  //const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState('pt');
   //const t = selectedLanguage === 'en' ? en : pt;
 
   const [current, setCurrent] = useState(0);
@@ -30,7 +29,9 @@ const Slider = ({ slides }) => {
           <div key={index} className={index === current ? slide.image : 'hidden'}>
             {index === current && (
               <>
-                <SideMenu />
+                <SideMenu selectedLanguage={selectedLanguage}
+                  setSelectedLanguage={setSelectedLanguage}
+                />
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
                   <div
                     className={
@@ -48,10 +49,10 @@ const Slider = ({ slides }) => {
                       </div>
                       <div className="flex flex-col gap-4">
                         <div className="text-lg">
-                          {/* {selectedLanguage === 'en' ? slide.descricao_en : slide.descricao_pt} */}
+                          {selectedLanguage === 'en' ? slide.descricao_en : slide.descricao_pt}
                         </div>
                         <div className="text-lg">
-                          {/* {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt} */}
+                          {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt}
                         </div>
                       </div>
                     </div>

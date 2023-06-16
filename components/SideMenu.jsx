@@ -12,8 +12,10 @@ import SelectLanguage from '@/components/SelectLanguage';
 import { BsChevronDown } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
-export default function SideMenu() {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+export const minhaVariavel = "qualquerPorra";
+
+export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
+  
   const t = selectedLanguage === 'en' ? en : pt;
 
   // Estado para controlar a abertura e fechamento do menu

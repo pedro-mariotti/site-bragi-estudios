@@ -1,21 +1,21 @@
 import { useState, useEffect } from 'react';
 import React from 'react';
 import SideMenu from '@/components/SideMenu';
-import { useRouter } from 'next/router';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
 
 const Sobre = () => {
-    const router = useRouter();
-    const { locale } = router;
-    const t = locale === 'en' ? en : pt;
+  
+  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const t = selectedLanguage === 'en' ? en : pt;
+
     const [data, setData] = useState('');
   
     useEffect(() => {
       // Defina o conteúdo padrão para o estado 'data'
       const defaultContent = generateDivContent('historia');
       setData(defaultContent);
-    }, [locale]); // Executa o useEffect apenas uma vez, no momento da montagem do componente
+    }, [selectedLanguage]); // Executa o useEffect apenas uma vez, no momento da montagem do componente
 
     const generateDivContent = (buttonId) => {
       if (buttonId === 'historia') {
@@ -80,7 +80,9 @@ const Sobre = () => {
     <div id="gallery">
           <div
             className="h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full bg-[url('../public/bg-preto.png')] bg-cover bg-top">
-                <SideMenu />
+                <SideMenu selectedLanguage={selectedLanguage}
+                  setSelectedLanguage={setSelectedLanguage}
+                />
                 <div>
                     <img src="/bragi_equipe.png" alt="" className="max-w-5xl h-max" />
                 </div>
