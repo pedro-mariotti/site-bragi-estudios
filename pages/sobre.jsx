@@ -98,13 +98,13 @@ const Sobre = () => {
   return (
     <div id="gallery">
       <div className="lg:h-screen h-max lg:grid w-full bg-[url('../public/bg-preto.png')] bg-cover bg-top md:grid-cols-8">
-        <div className="col-span-1">
+        <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
           />
         </div>
-        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-4 pt-24">
+        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-4 pt-24 z-0">
           <img src="/bragi_equipe.png" alt="photo of the team" />
         </div>
 
