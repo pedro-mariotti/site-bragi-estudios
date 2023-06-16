@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import { useRouter } from 'next/router';
+
 import style from '@/styles/menu.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
@@ -13,9 +13,8 @@ import { BsChevronDown } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
 export default function SideMenu() {
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === 'en' ? en : pt;
+  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const t = selectedLanguage === 'en' ? en : pt;
 
   // Estado para controlar a abertura e fechamento do menu
   const [menuOpen, setMenuOpen] = useState(false);
@@ -112,7 +111,10 @@ export default function SideMenu() {
                 </Link>
               </li>
               <li className="langs flex-row flex gap-3">
-                <SelectLanguage/>
+                <SelectLanguage
+                  selectedLanguage={selectedLanguage}
+                  setSelectedLanguage={setSelectedLanguage}
+                />
               </li>
             </ul>
           </div>

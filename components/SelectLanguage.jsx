@@ -1,16 +1,10 @@
-import React, { useState } from 'react';
+/* eslint-disable react/prop-types */
+import React from 'react';
 
-import { useRouter } from 'next/router';
-
-const SelectLanguage = () => {
-  const router = useRouter();
-  const { locale } = router;
-  const [selectedLanguage, setSelectedLanguage] = useState(locale);
-
+const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
   const changeLanguage = (e) => {
     const selectedLocale = e.target.value;
     setSelectedLanguage(selectedLocale);
-    router.push(router.pathname, router.asPath, { locale: selectedLocale });
   };
 
   return (
@@ -22,10 +16,9 @@ const SelectLanguage = () => {
           id="pt"
           name="idioma"
           value="pt"
-          checked={selectedLanguage === 'pt'}
-          className='hidden'
+          className="hidden"
         />
-        <img
+       <img
           id="pt-img"
           src={selectedLanguage === 'pt' ? '/pt_checked.svg' : '/pt.svg'}
           alt="Português"
@@ -40,10 +33,9 @@ const SelectLanguage = () => {
           id="en"
           name="idioma"
           value="en"
-          checked={selectedLanguage === 'en'}
-          className='hidden'
+          className="hidden"
         />
-        <img
+         <img
           id="en-img"
           src={selectedLanguage === 'en' ? '/en_checked.svg' : '/en.svg'}
           alt="English"

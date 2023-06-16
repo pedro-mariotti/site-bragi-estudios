@@ -1,15 +1,12 @@
-import Link from 'next/link';
-import React from 'react';
+import React, { useState } from 'react';
 import NavBar from '../components/NavBar';
-import { useRouter } from 'next/router';
-import SelectLanguage from '@/components/SelectLanguage';
+import SelectLanguage from '../components/SelectLanguage';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
 
 const Main = () => {
-  const router = useRouter();
-  const { locale } = router;
-  const t = locale === 'en' ? en : pt;
+  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const t = selectedLanguage === 'en' ? en : pt;
 
   return (
     <div
@@ -17,15 +14,18 @@ const Main = () => {
       className="h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
     >
       {/* Logo background */}
-      <div className=" h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
-        <div className="pt-8 self-end lg:self-start ">
+      <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
+        <div className="pt-8 self-end lg:self-start">
           <img src="/logo-grande.png" alt="logo" className="w-72 lg:w-96" />
         </div>
 
         {/* Conteiner geral dos textos */}
-        <div className="flex flex-col pl-12 sm:pl-48 pb-14 sm:pb-28 ">
+        <div className="flex flex-col pl-12 sm:pl-48 pb-14 sm:pb-28">
           <div className="flex flex-col gap-8 text-white">
-            <SelectLanguage/>
+          <SelectLanguage
+              selectedLanguage={selectedLanguage}
+              setSelectedLanguage={setSelectedLanguage}
+            />
             <h1 name="title" className="text-4xl sm:text-7xl font-bold mb-2">
               Bragi Estúdios
             </h1>
@@ -34,21 +34,22 @@ const Main = () => {
               <h2 className="text-2xl sm:text-4xl">
                 {t.titles.criamos} <br />
                 {t.titles.exp}
-                
               </h2>
             </div>
             <h3 className="uppercase font-semibold text-base sm:text-lg">
-              {t.descricao.linha1}<br />
-              {t.descricao.linha2}<br />
-              {t.descricao.linha3}<br />
-              {t.descricao.linha4}  
+              {t.descricao.linha1}
+              <br />
+              {t.descricao.linha2}
+              <br />
+              {t.descricao.linha3}
+              <br />
+              {t.descricao.linha4}
             </h3>
             <div>
-
               {/* Redes sociais */}
               <ul className="flex-row flex gap-8">
                 <li>
-                  <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
+                  <a href="https://discord.gg/9C4Wh8TYef" target="_blank" rel="noreferrer">
                     <span>
                       <img
                         src="discord.svg"
@@ -57,59 +58,47 @@ const Main = () => {
                         height={50}
                       />
                     </span>
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="https://www.tiktok.com/@bragiestudios"
-                    target="_blank"
-                  >
+                  <a href="https://www.tiktok.com/@bragiestudios" target="_blank" rel="noreferrer">
                     <img
                       src="tiktok.svg"
                       alt="tiktok"
                       width={50}
                       height={50}
                     />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="https://www.instagram.com/bragiestudios/"
-                    target="_blank"
-                  >
+                  <a href="https://www.instagram.com/bragiestudios/" target="_blank" rel="noreferrer">
                     <img
                       src="instagram.svg"
                       alt="insta"
                       width={45}
                       height={45}
                     />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="https://www.youtube.com/@bragiestudios"
-                    target="_blank"
-                  >
+                  <a href="https://www.youtube.com/@bragiestudios" target="_blank" rel="noreferrer">
                     <img
                       src="youtube.svg"
                       alt="youtube"
                       width={50}
                       height={50}
                     />
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="https://twitter.com/bragiestudios"
-                    target="_blank"
-                  >
+                  <a href="https://twitter.com/bragiestudios" target="_blank" rel="noreferrer">
                     <img
                       src="twitter.svg"
                       alt="twitter"
                       width={50}
                       height={50}
                     />
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
