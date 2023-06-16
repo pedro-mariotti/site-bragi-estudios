@@ -49,8 +49,7 @@ const Sobre = () => {
         return (
           <div>
             <h1 className="text-lg font-bold text-orange">{t.sobre.time}</h1>
-            <p>Conheça o time que faz acontecer!</p>
-
+          
             <h1 className="text-base font-bold text-orange">Irlan Bragi</h1>
             <p>CEO, GameDev & GameDesigner</p><br/>
 
@@ -87,13 +86,12 @@ const Sobre = () => {
                     <img src="/bragi_equipe.png" alt="" className="max-w-5xl h-max" />
                 </div>
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
-                  
                   <div className="text-purple z-20 w-full ">
                     <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full h-96 overflow-y-scroll sm:overflow-hidden">
                       <div className="text-lg h-max pb-4">
                         <span className=" text-orange"></span>
                       </div>
-                      <div className="flex flex-col gap-4">
+                      <div className="flex flex-col gap-3">
                         <div>{data}</div>
                       </div>
                     </div>

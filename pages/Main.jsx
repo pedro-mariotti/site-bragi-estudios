@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
+      className="main h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
     >
       {/* Logo background */}
       <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
@@ -30,7 +30,7 @@ const Main = () => {
               Bragi Estúdios
             </h1>
             <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl">
-              <img src="/hastag.png" alt="hashtag" />
+              <img id='svgSombra' src="/hastag.png" alt="hashtag" />
               <h2 className="text-2xl sm:text-4xl">
                 {t.titles.criamos} <br />
                 {t.titles.exp}
@@ -52,6 +52,7 @@ const Main = () => {
                   <a href="https://discord.gg/9C4Wh8TYef" target="_blank" rel="noreferrer">
                     <span>
                       <img
+                        id='svgSombra'
                         src="discord.svg"
                         alt="discord"
                         width={50}
@@ -63,6 +64,7 @@ const Main = () => {
                 <li>
                   <a href="https://www.tiktok.com/@bragiestudios" target="_blank" rel="noreferrer">
                     <img
+                      id='svgSombra'
                       src="tiktok.svg"
                       alt="tiktok"
                       width={50}
@@ -73,6 +75,7 @@ const Main = () => {
                 <li>
                   <a href="https://www.instagram.com/bragiestudios/" target="_blank" rel="noreferrer">
                     <img
+                      id='svgSombra'
                       src="instagram.svg"
                       alt="insta"
                       width={45}
@@ -83,6 +86,7 @@ const Main = () => {
                 <li>
                   <a href="https://www.youtube.com/@bragiestudios" target="_blank" rel="noreferrer">
                     <img
+                      id='svgSombra'
                       src="youtube.svg"
                       alt="youtube"
                       width={50}
@@ -93,6 +97,7 @@ const Main = () => {
                 <li>
                   <a href="https://twitter.com/bragiestudios" target="_blank" rel="noreferrer">
                     <img
+                      id='svgSombra'
                       src="twitter.svg"
                       alt="twitter"
                       width={50}

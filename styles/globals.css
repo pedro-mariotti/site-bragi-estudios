@@ -15,9 +15,14 @@ html {
   background-image: url('../public/bg-preto.png');
 }
 
-.main {
+.main{
   color: #fff;
-  text-shadow: 3px 3px #00000033;
+  text-shadow: 5px 5px #00000033;
+  
+}
+
+#svgSombra{
+  filter:drop-shadow(10px 10px 10px #00000033);
 }
 
 a:hover{

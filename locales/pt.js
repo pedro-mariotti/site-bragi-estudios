@@ -45,9 +45,9 @@ export default{
         }
         
     },
-    orbits:{
-        descricao:'Você pode ser um conquistador de órbitas. Salte de uma órbita para outra evitando as órbitas vermelhas. Libere os novos níveis coletando as estrelas amarelas e azuis. Cuidado para não mandar sua nave para o espaço!',
-        publisher:'Publicado pela Magalu Games.'
+    contato:{
+        title: 'FALE COM A GENTE :D',
+        div1: 'Amamos conhecer pessoas que curtem os nossos jogos!',
     }
 };
 

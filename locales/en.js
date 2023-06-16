@@ -47,9 +47,9 @@ export default {
         },
         
     },
-    orbits:{
-        descricao:'You can be an orbit conqueror. Jump from one orbit to another, avoiding the red orbits. Unlock new levels by collecting the yellow and blue stars. Be careful not to send your spaceship into space!',
-        publisher:'Published by Magalu Games.'
+    contato:{
+        title: 'TALK TO US :D',
+        div1: 'We love to meet people that enjoy our games!',
     }
 
 };
