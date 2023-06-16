@@ -40,7 +40,7 @@ const Slider = ({ slides }) => {
                   <div
                     className={
                       index === 0
-                        ? 'w-full h-96 flex items-center bg-gradient-to-r from-black-500 to-white-500 justify-center'
+                        ? "w-full h-96 flex items-center  bg-[url('../public/Ativo-3.png')] bg-center bg-contain justify-center"
                         : 'w-full h-96 flex items-center justify-center'
                     }
                   >
