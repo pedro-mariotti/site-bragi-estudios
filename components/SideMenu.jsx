@@ -1,15 +1,22 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { useRouter } from 'next/router';
 import style from '@/styles/menu.module.css';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import en from '../locales/en.js';
+import pt from '../locales/pt.js';
 import SelectLanguage from '@/components/SelectLanguage';
 
 import { BsChevronDown } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
 export default function SideMenu() {
+  const router = useRouter();
+  const { locale } = router;
+  const t = locale === 'en' ? en : pt;
+
   // Estado para controlar a abertura e fechamento do menu
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -59,13 +66,13 @@ export default function SideMenu() {
                 </Link>
               </li>
               <li>
-                <Link href="/jogos">JOGOS</Link>
+                <Link href="/jogos">{t.navbar.jogos}</Link>
               </li>
               <li>
-                <Link href="/quemSomos">SOBRE</Link>
+                <Link href="/sobre">{t.navbar.sobre}</Link>
               </li>
               <li>
-                <Link href="/contato">CONTATO</Link>
+                <Link href="/contato">{t.navbar.contato}</Link>
               </li>
               <li>
               <Link href='https://bragiestudios.com/press/' target="_blank">PRESS KIT</Link>
@@ -75,7 +82,7 @@ export default function SideMenu() {
                 <Link href="https://discord.gg/9C4Wh8TYef" target="_blank">
                   <span>
                     <img
-                      src="discord.svg"
+                      src="/discord.svg"
                       alt="discord"
                       width={50}
                       height={50}
@@ -86,31 +93,26 @@ export default function SideMenu() {
                   href="https://www.tiktok.com/@bragiestudios"
                   target="_blank"
                 >
-                  <img src="tiktok.svg" alt="tiktok" width={50} height={50} />
+                  <img src="/tiktok.svg" alt="tiktok" width={50} height={50} />
                 </Link>
                 <Link
                   href="https://www.instagram.com/bragiestudios/"
                   target="_blank"
                 >
-                  <img src="instagram.svg" alt="insta" width={45} height={45} />
+                  <img src="/instagram.svg" alt="insta" width={45} height={45} />
                 </Link>
                 <Link
                   href="https://www.youtube.com/@bragiestudios"
                   target="_blank"
                 >
-                  <img src="youtube.svg" alt="youtube" width={50} height={50} />
+                  <img src="/youtube.svg" alt="youtube" width={50} height={50} />
                 </Link>
                 <Link href="https://twitter.com/bragiestudios" target="_blank">
-                  <img src="twitter.svg" alt="twitter" width={50} height={50} />
+                  <img src="/twitter.svg" alt="twitter" width={50} height={50} />
                 </Link>
               </li>
               <li className="langs flex-row flex gap-3">
-                <a href="#" language="english" className="active">
-                  EN
-                </a>
-                <a href="#" language="ptBR">
-                  PT
-                </a>
+                <SelectLanguage/>
               </li>
             </ul>
           </div>

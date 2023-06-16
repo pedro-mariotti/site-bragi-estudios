@@ -62,10 +62,10 @@ const Slider = ({ slides }) => {
                         <span>{slide.ano}</span>
                       </div>
                       <div className="flex flex-col gap-4">
-                        <div className="text-lg">{t[slide.descricao]}</div>
-
-                        <div className="">{t[slide.publisher]}</div>
+                            <div className="text-lg">{locale == 'en' ? slide.descricao_en : slide.descricao_pt}</div>
+                            <div className="text-lg">{locale == 'en' ? slide.publisher_en : slide.publisher_pt}</div>
                       </div>
+                      
                     </div>
                   </div>
                   <div className=" flex flex-row gap-3 z-20 w-full">
