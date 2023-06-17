@@ -97,18 +97,18 @@ const Sobre = () => {
 
   return (
     <div id="gallery">
-      <div className="lg:h-screen h-max lg:grid w-full bg-preto bg-cover bg-top md:grid-cols-8">
+      <div className="lg:h-screen h-max lg:grid w-full bg-preto bg-cover bg-top md:grid-cols-9 overflow-hidden">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
           />
         </div>
-        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-4 pt-24 z-0">
-          <img src="/bragi_equipe.png" alt="photo of the team" />
+        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-5 pt-24 z-0">
+          <img src="/equipe-ajustada.png" alt="photo of the team" />
         </div>
 
-        <div className="flex flex-col items-center justify-center lg:h-full gap-7 md:col-span-3 px-12 pb-24 w-full">
+        <div className="flex flex-col items-center justify-center lg:h-full gap-7 col-span-3 px-12 pb-24 w-full">
           <div className="text-purple z-20 w-full ">
             <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semimedium h-96 overflow-y-scroll sm:overflow-hidden w-full">
               <div className="text-lg h-max pb-4">

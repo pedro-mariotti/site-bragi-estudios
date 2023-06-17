@@ -54,8 +54,8 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
         >
           <div id="menu" className={style.menu}>
             <ul className={style.content}>
-              <li>
-                <Link href="/">
+              <Link href="/">
+                <li>
                   <img
                     src="/brg_icon.svg"
                     alt="Logo"
@@ -63,22 +63,20 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                     height={59}
                     className={style.tamanhoLogo}
                   />
-                </Link>
-              </li>
-              <li>
-                <Link href="/jogos">{t.navbar.jogos}</Link>
-              </li>
-              <li>
-                <Link href="/sobre">{t.navbar.sobre}</Link>
-              </li>
-              <li>
-                <Link href="/contato">{t.navbar.contato}</Link>
-              </li>
-              <li>
-                <Link href="https://bragiestudios.com/press/" target="_blank">
-                  PRESS KIT
-                </Link>
-              </li>
+                </li>
+              </Link>
+              <Link href="/jogos">
+                <li>{t.navbar.jogos}</li>
+              </Link>
+              <Link href="/sobre">
+                <li>{t.navbar.sobre}</li>
+              </Link>
+              <Link href="/contato">
+                <li>{t.navbar.contato}</li>
+              </Link>
+              <Link href="https://bragiestudios.com/press/" target="_blank">
+                <li>PRESS KIT</li>
+              </Link>
             </ul>
             <ul className={style.content2}>
               <li className="flex-row flex gap-3 items-center">

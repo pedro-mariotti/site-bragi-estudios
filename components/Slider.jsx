@@ -40,14 +40,14 @@ const Slider = ({ slides }) => {
                   <div
                     className={
                       index === 0
-                        ? "w-full h-96 flex items-center  bg-[url('../public/Ativo-3.png')] bg-center bg-contain justify-center"
+                        ? 'w-full h-96 flex items-center justify-center'
                         : 'w-full h-96 flex items-center justify-center'
                     }
                   >
                     <img
                       src={slide.logo}
                       alt="game logo"
-                      className="w-96 h-max"
+                      className="w-full h-max"
                     />
                   </div>
                   <div className="text-purple z-20 w-full">
