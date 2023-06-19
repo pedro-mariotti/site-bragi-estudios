@@ -1,7 +1,10 @@
 export const SliderData = [
   {
     titulo: 'Orbits Conqueror',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full bg-[url('/Banners/orbits-bg.jpg')] bg-cover bg-center'",
     logo: '/Banners/LOGO_2.png',
@@ -20,7 +23,10 @@ export const SliderData = [
   },
   {
     titulo: 'Mooh',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: 'Em breve',
+    ano_en: 'TBR',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_mooh.png')] bg-cover bg-center bg-center'",
     logo: '/Banners/logo_mooh.png',
@@ -38,7 +44,10 @@ export const SliderData = [
   },
   {
     titulo: '100NHAS',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2018',
+    ano_en: '2018',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[#526E79] bg-cover bg-center'",
     logo: '/Banners/100NHAS_LOGO.png',
@@ -57,7 +66,10 @@ export const SliderData = [
   },
   {
     titulo: '100NHAS Fugaz',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2020',
+    ano_en: '2020',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/100NHASFUGAZ_BG.jpg')] bg-cover bg-center'",
     logo: '/Banners/100NHASFUGAZ_LOGO.png',
@@ -76,7 +88,10 @@ export const SliderData = [
   },
   {
     titulo: 'Building Sort',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_building.jpg')] bg-cover bg-center'",
     logo: '/Banners/building_logo.png',
@@ -94,7 +109,10 @@ export const SliderData = [
   },
   {
     titulo: 'TOC',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2019',
+    ano_en: '2019',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_toc.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_toc.png',
@@ -112,7 +130,10 @@ export const SliderData = [
   },
   {
     titulo: 'Other Color',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/othercolor.jpg')] bg-cover bg-center'",
     logo: '/Banners/othercolor-logo.png',
@@ -131,7 +152,10 @@ export const SliderData = [
   },
   {
     titulo: 'Wood Cutter',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_wood.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_wood.png',

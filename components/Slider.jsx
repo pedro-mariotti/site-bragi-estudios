@@ -62,7 +62,7 @@ const Slider = ({ slides }) => {
                     <img
                       src={slide.logo}
                       alt="game logo"
-                      className="w-96 h-max"
+                      className="w-96 h-max object-contain"
                     />
                   </div>
                   <div className="text-purple z-20 w-full">
@@ -70,10 +70,14 @@ const Slider = ({ slides }) => {
                       <div className="flex-wrap text-lg h-max pb-4 flex justify-between items-center">
                         <div>
                           <span className="text-orange">{slide.titulo}</span> |{' '}
-                          <span>{slide.ano}</span>
+                          <span>{selectedLanguage === 'en'
+                            ? slide.ano_en
+                            : slide.ano}</span>
                         </div>
                         <div className="flex gap-2 items-center font-normal text-sm">
-                          {slide.released == 'true' && <p>Confira:</p>}
+                          {slide.released == 'true' && <p>{selectedLanguage === 'en'
+                            ? slide.confira_en
+                            : slide.confira_pt}</p>}
                           {slide.link_android !== '' && (
                             <Link href={slide.link_android} target="_blank">
                               <img

@@ -129,9 +129,9 @@ const Sobre = () => {
           <img src="/bragi_equipe.png" alt="photo of the team" />
         </div>
 
-        <div className="flex flex-col items-center justify-center lg:h-full gap-7 md:col-span-3 px-12 pb-24 w-full">
+        <div className="flex flex-col items-center justify-center lg:h-full gap-7 md:col-span-3 px-10 pb-24 w-full">
           <div className="text-purple z-20 w-full ">
-            <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semimedium h-96 overflow-y-scroll sm:overflow-hidden w-full">
+            <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semimedium h-96 overflow-y-scroll w-full">
               <div className="text-lg h-max pb-4">
                 <span className=" text-orange"></span>
               </div>
