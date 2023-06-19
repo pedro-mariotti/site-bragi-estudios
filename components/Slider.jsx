@@ -52,13 +52,7 @@ const Slider = ({ slides }) => {
                   setSelectedLanguage={setSelectedLanguage}
                 />
                 <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
-                  <div
-                    className={
-                      index === 0
-                        ? 'w-full h-96 flex items-center justify-center'
-                        : 'w-full h-96 flex items-center justify-center'
-                    }
-                  >
+                  <div className="w-full h-96 flex items-center justify-center">
                     <img
                       src={slide.logo}
                       alt="game logo"
