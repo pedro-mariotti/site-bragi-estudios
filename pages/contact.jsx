@@ -1,17 +1,30 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
+import Head from 'next/head';
 import SideMenu from '@/components/SideMenu';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
-import HoverableImage from '../components/Hover';
+import HoverableImage from '../components/Hover.jsx';
 
 const Contato = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState();
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('selectedLanguage');
+      setSelectedLanguage(storedLanguage || 'pt');
+    }
+  }, []);
+
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (
-    <div id="gallery">
-      <div className="flex grid lg:grid-cols-8 flex-col h-screen bg-preto bg-cover bg-top">
+    <div id="gallery" className='bg-[#000]'>
+      <Head>
+        <title>Bragi Estúdios - {t.paginas.contact}</title>
+        <link rel="icon" href="/brg_icon.svg" />
+      </Head>
+      <div className="grid lg:grid-cols-8 flex-col h-screen bg-preto bg-cover bg-top">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import NavBar from '../components/NavBar';
 import SelectLanguage from '../components/SelectLanguage';
 import en from '../locales/en.js';
@@ -7,7 +7,15 @@ import pt from '../locales/pt.js';
 import HoverableImage from '../components/Hover'
 
 const Main = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState();
+  
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('selectedLanguage');
+      setSelectedLanguage(storedLanguage || 'pt');
+    }
+  }, []);
+  
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (

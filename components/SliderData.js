@@ -1,7 +1,10 @@
 export const SliderData = [
   {
     titulo: 'Orbits Conqueror',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full bg-[url('/Banners/orbits-bg.jpg')] bg-cover bg-center'",
     logo: '/Banners/LOGO_2.png',
@@ -19,27 +22,32 @@ export const SliderData = [
     released: 'true',
   },
   {
-    titulo: 'Other Color',
-    ano: '2022',
+    titulo: 'Mooh',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
+    ano: 'Em breve',
+    ano_en: 'TBR',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/othercolor.jpg')] bg-cover bg-center'",
-    logo: '/Banners/othercolor-logo.png',
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_mooh.png')] bg-cover bg-center bg-center'",
+    logo: '/Banners/logo_mooh.png',
     descricao_pt:
-      'O objetivo do jogo é descobrir rapidamente qual elemento tem uma cor diferente. Acerte muitas cores seguidas para ganhar pontos ofensivos e aumentar sua pontuação!',
+      'Uma vaca é abduzida para um planeta estranho e colocada em uma prisão. Ao conseguir fugir, começa a explorar o novo mundo buscando formas de voltar para casa. É um jogo de aventura e puzzles, em plataforma 360°.',
     publisher_pt: '',
     descricao_en:
-      'The goal is to quickly identify which element has a different color. Guess many consecutive colors correctly to earn offensive points and increase your score!',
+      "A cow is abducted to a strange planet and placed in a prison. Upon escaping, it begins to explore the new world, seeking ways to return home. It's an adventure and puzzle game in a 360° platform.",
     publisher_en: '',
-    link_android:
-      'https://play.google.com/store/apps/details?id=com.Freyr.OtherColor ',
-    link_apple: 'https://bragiestudios.com/HTML5GAMES/OtherColor_BETA/ ',
+    link_android: '',
+    link_apple: '',
     link_html: '',
     link_itchio: '',
-    released: 'true',
+    released: 'false',
   },
   {
     titulo: '100NHAS',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2018',
+    ano_en: '2018',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[#526E79] bg-cover bg-center'",
     logo: '/Banners/100NHAS_LOGO.png',
@@ -58,15 +66,18 @@ export const SliderData = [
   },
   {
     titulo: '100NHAS Fugaz',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2020',
+    ano_en: '2020',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/100NHASFUGAZ_BG.jpg')] bg-cover bg-center'",
     logo: '/Banners/100NHASFUGAZ_LOGO.png',
     descricao_pt:
-      'O 100NHAS é um jogo de enigmas desenvolvido com a função de entretenimento educativo. São 100 fases idealizadas para uma diversão entre amigos e familiares, envolvendo as mais diversas faixas etárias e campos de conhecimento.',
+      'O 100NHAS Fugaz é um spin-off desenvolvido na pandemia de Covid-19, com 20 novos enigmas para você e sua família resolverem em casa. #ficaemcasa',
     publisher_pt: '',
     descricao_en:
-      '100NHAS is a puzzle game developed with the purpose of providing educational entertainment. It consists of 100 levels designed for fun among friends and family, catering to various age groups and fields of knowledge.',
+      '100NHAS Fugaz is a spin-off developed during the Covid-19 pandemic, featuring 20 new puzzles for you and your family to solve at home. #StayHome',
     publisher_en: '',
     link_android:
       'https://play.google.com/store/apps/details?id=com.Bragi.cemnhas.zip',
@@ -77,7 +88,10 @@ export const SliderData = [
   },
   {
     titulo: 'Building Sort',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_building.jpg')] bg-cover bg-center'",
     logo: '/Banners/building_logo.png',
@@ -95,7 +109,10 @@ export const SliderData = [
   },
   {
     titulo: 'TOC',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2019',
+    ano_en: '2019',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_toc.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_toc.png',
@@ -112,8 +129,33 @@ export const SliderData = [
     released: 'true',
   },
   {
-    titulo: 'Wood Cutter',
+    titulo: 'Other Color',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
     ano: '2022',
+    ano_en: '2022',
+    image:
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/othercolor.jpg')] bg-cover bg-center'",
+    logo: '/Banners/othercolor-logo.png',
+    descricao_pt:
+      'O objetivo do jogo é descobrir rapidamente qual elemento tem uma cor diferente. Acerte muitas cores seguidas para ganhar pontos ofensivos e aumentar sua pontuação!',
+    publisher_pt: '',
+    descricao_en:
+      'The goal is to quickly identify which element has a different color. Guess many consecutive colors correctly to earn offensive points and increase your score!',
+    publisher_en: '',
+    link_android:
+      'https://play.google.com/store/apps/details?id=com.Freyr.OtherColor ',
+    link_apple: '',
+    link_html: 'https://bragiestudios.com/HTML5GAMES/OtherColor_BETA/ ',
+    link_itchio: '',
+    released: 'true',
+  },
+  {
+    titulo: 'Wood Cutter',
+    confira_en: 'Try it:', 
+    confira_pt: 'Confira:', 
+    ano: '2022',
+    ano_en: '2022',
     image:
       "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_wood.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_wood.png',
@@ -129,23 +171,5 @@ export const SliderData = [
     link_html: '',
     link_itchio: 'https://bragiestudios.itch.io/wood-cutter',
     released: 'true',
-  },
-  {
-    titulo: 'Mooh',
-    ano: 'Em breve',
-    image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_mooh.png')] bg-cover bg-center bg-center'",
-    logo: '/Banners/logo_mooh.png',
-    descricao_pt:
-      'Uma vaca é abduzida para um planeta estranho e colocada em uma prisão. Ao conseguir fugir, começa a explorar o novo mundo buscando formas de voltar para casa. É um jogo de aventura e puzzles, em plataforma 360°.',
-    publisher_pt: '',
-    descricao_en:
-      "A cow is abducted to a strange planet and placed in a prison. Upon escaping, it begins to explore the new world, seeking ways to return home. It's an adventure and puzzle game in a 360° platform.",
-    publisher_en: '',
-    link_android: '',
-    link_apple: '',
-    link_html: '',
-    link_itchio: '',
-    released: 'false',
   },
 ];

@@ -1,11 +1,22 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import SideMenu from './SideMenu';
+import Head from 'next/head';
+import en from '../locales/en.js';
+import pt from '../locales/pt.js';
 
 const Slider = ({ slides }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
-  //const t = selectedLanguage === 'en' ? en : pt;
+  const [selectedLanguage, setSelectedLanguage] = useState();
+
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('selectedLanguage');
+      setSelectedLanguage(storedLanguage || 'pt');
+    }
+  }, []);
+
+  const t = selectedLanguage === 'en' ? en : pt;
 
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -24,6 +35,10 @@ const Slider = ({ slides }) => {
 
   return (
     <div id="gallery">
+      <Head>
+        <title>Bragi Estúdios - {t.paginas.games}</title>
+        <link rel="icon" href="/brg_icon.svg" />
+      </Head>
       {slides.map((slide, index) => {
         return (
           <div
@@ -47,7 +62,7 @@ const Slider = ({ slides }) => {
                     <img
                       src={slide.logo}
                       alt="game logo"
-                      className="w-full h-max"
+                      className="w-96 h-max object-contain"
                     />
                   </div>
                   <div className="text-purple z-20 w-full">
@@ -55,10 +70,20 @@ const Slider = ({ slides }) => {
                       <div className="flex-wrap text-lg h-max pb-4 flex justify-between items-center">
                         <div>
                           <span className="text-orange">{slide.titulo}</span> |{' '}
-                          <span>{slide.ano}</span>
+                          <span>
+                            {selectedLanguage === 'en'
+                              ? slide.ano_en
+                              : slide.ano}
+                          </span>
                         </div>
                         <div className="flex gap-2 items-center font-normal text-sm">
-                          {slide.released == 'true' && <p>Confira:</p>}
+                          {slide.released == 'true' && (
+                            <p>
+                              {selectedLanguage === 'en'
+                                ? slide.confira_en
+                                : slide.confira_pt}
+                            </p>
+                          )}
                           {slide.link_android !== '' && (
                             <Link href={slide.link_android} target="_blank">
                               <img
