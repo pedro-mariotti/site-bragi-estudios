@@ -63,7 +63,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                   />
                 </li>
               </Link>
-              <Link href="/jogos">
+              <Link href="/games">
                 <li>{t.navbar.jogos}</li>
               </Link>
               <Link href="/sobre">
