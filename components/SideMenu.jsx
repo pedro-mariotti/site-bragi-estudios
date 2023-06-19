@@ -63,13 +63,13 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                   />
                 </li>
               </Link>
-              <Link href="/jogos">
+              <Link href="games">
                 <li>{t.navbar.jogos}</li>
               </Link>
-              <Link href="/sobre">
+              <Link href="about">
                 <li>{t.navbar.sobre}</li>
               </Link>
-              <Link href="/contato">
+              <Link href="contact">
                 <li>{t.navbar.contato}</li>
               </Link>
               <Link href="https://bragiestudios.com/press/" target="_blank">
