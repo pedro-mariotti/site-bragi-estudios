@@ -1,12 +1,12 @@
 export const SliderData = [
   {
     titulo: 'Orbits Conqueror',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2022',
     ano_en: '2022',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full bg-[url('/Banners/orbits-bg.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full sm:bg-[url('/Banners/orbits-bg.jpg')] bg-[url('/Banners/orbits-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/LOGO_2.png',
     descricao_pt:
       'Você pode ser um conquistador de órbitas. Salte de uma órbita para outra evitando as órbitas vermelhas. Libere os novos níveis coletando as estrelas amarelas e azuis. Cuidado para não mandar sua nave para o espaço!',
@@ -23,8 +23,8 @@ export const SliderData = [
   },
   {
     titulo: 'Mooh',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: 'Em breve',
     ano_en: 'TBR',
     image:
@@ -44,8 +44,8 @@ export const SliderData = [
   },
   {
     titulo: '100NHAS',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2018',
     ano_en: '2018',
     image:
@@ -66,12 +66,12 @@ export const SliderData = [
   },
   {
     titulo: '100NHAS Fugaz',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2020',
     ano_en: '2020',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/100NHASFUGAZ_BG.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/100NHASFUGAZ_BG.jpg')] bg-[url('/Banners/fugaz-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/100NHASFUGAZ_LOGO.png',
     descricao_pt:
       'O 100NHAS Fugaz é um spin-off desenvolvido na pandemia de Covid-19, com 20 novos enigmas para você e sua família resolverem em casa. #ficaemcasa',
@@ -88,12 +88,12 @@ export const SliderData = [
   },
   {
     titulo: 'Building Sort',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2022',
     ano_en: '2022',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_building.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/bg_building.jpg')] bg-[url('/Banners/building-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/building_logo.png',
     descricao_pt:
       'Building Sort é um jogo Puzzle Sorting no qual você deve organizar os andares dos edifícios trocando suas posições. Troque os edifícios estrategicamente para trazer ordem ao caos.',
@@ -109,12 +109,12 @@ export const SliderData = [
   },
   {
     titulo: 'TOC',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2019',
     ano_en: '2019',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_toc.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/bg_toc.jpg')] bg-[url('/Banners/toc-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_toc.png',
     descricao_pt:
       'Um jogo arcade simples e divertido: Clique nos TOCs indicados para ganhar pontos. Mas cuidado, se você clicar nos TOCs errados, perderá pontos!',
@@ -130,12 +130,12 @@ export const SliderData = [
   },
   {
     titulo: 'Other Color',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2022',
     ano_en: '2022',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/othercolor.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/othercolor.jpg')] bg-[url('/Banners/othercolor-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/othercolor-logo.png',
     descricao_pt:
       'O objetivo do jogo é descobrir rapidamente qual elemento tem uma cor diferente. Acerte muitas cores seguidas para ganhar pontos ofensivos e aumentar sua pontuação!',
@@ -152,12 +152,12 @@ export const SliderData = [
   },
   {
     titulo: 'Wood Cutter',
-    confira_en: 'Try it:', 
-    confira_pt: 'Confira:', 
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
     ano: '2022',
     ano_en: '2022',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/bg_wood.jpg')] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/bg_wood.jpg')] bg-[url('/Banners/wood-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/logo_wood.png',
     descricao_pt:
       'Jogo desenvolvido para a Game Jam Magalu, em menos de 48 horas! Wood Cutter é um jogo de precisão e atenção. Crie a melhor estratégia para cortar, com precisão, um bloco de madeira com os moldes disponíveis - antes que acabem suas lâminas.',

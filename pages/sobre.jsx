@@ -104,7 +104,7 @@ const Sobre = () => {
             setSelectedLanguage={setSelectedLanguage}
           />
         </div>
-        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-5 pt-24 z-0">
+        <div className="flex lg:h-full h-max flex-col-reverse items-center w-full col-span-5 pt-24 px-12 lg:px-0 z-0">
           <img src="/equipe-ajustada.png" alt="photo of the team" />
         </div>
 

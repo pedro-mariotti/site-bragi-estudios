@@ -139,7 +139,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                       default: '/redes_sociais/twitter.svg',
                       hover: '/redes_sociais/twitter_hover.svg',
                     }}
-                    alt="twiter"
+                    alt="twitter"
                     width={60}
                     height={60}
                   />
