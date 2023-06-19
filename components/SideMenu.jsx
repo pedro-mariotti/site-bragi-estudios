@@ -12,8 +12,6 @@ import SelectLanguage from '@/components/SelectLanguage';
 import { BsChevronUp } from 'react-icons/Bs';
 import { MdOutlineMenu } from 'react-icons/Md';
 
-export const minhaVariavel = 'qualquerPorra';
-
 export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
   const t = selectedLanguage === 'en' ? en : pt;
 

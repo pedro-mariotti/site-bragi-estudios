@@ -1,11 +1,16 @@
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import SideMenu from './SideMenu';
 
 const Slider = ({ slides }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
-  //const t = selectedLanguage === 'en' ? en : pt;
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('selectedLanguage') || 'pt'
+  );
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', selectedLanguage);
+  }, [selectedLanguage]);
 
   const [current, setCurrent] = useState(0);
   const length = slides.length;

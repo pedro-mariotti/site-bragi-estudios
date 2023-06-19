@@ -5,7 +5,14 @@ import en from '../locales/en.js';
 import pt from '../locales/pt.js';
 
 const Sobre = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('selectedLanguage') || 'pt'
+  );
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', selectedLanguage);
+  }, [selectedLanguage]);
+  
   const t = selectedLanguage === 'en' ? en : pt;
 
   const [data, setData] = useState('');

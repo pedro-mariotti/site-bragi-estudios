@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import React from 'react';
 import SideMenu from '@/components/SideMenu';
 import en from '../locales/en.js';
@@ -6,7 +6,14 @@ import pt from '../locales/pt.js';
 import HoverableImage from '../components/Hover';
 
 const Contato = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState(
+    localStorage.getItem('selectedLanguage') || 'pt'
+  );
+
+  useEffect(() => {
+    localStorage.setItem('selectedLanguage', selectedLanguage);
+  }, [selectedLanguage]);
+
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (

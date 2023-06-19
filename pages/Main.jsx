@@ -7,7 +7,7 @@ import pt from '../locales/pt.js';
 import HoverableImage from '../components/Hover'
 
 const Main = () => {
-  const [selectedLanguage, setSelectedLanguage] = useState('pt');
+  const [selectedLanguage, setSelectedLanguage] = useState();
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (

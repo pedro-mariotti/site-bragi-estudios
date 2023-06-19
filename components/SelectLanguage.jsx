@@ -1,11 +1,9 @@
-/* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import HoverableImage from '../components/Hover';
 
 const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
-
-  const [isHovered, setIsHovered] = useState(false);
+  const [setIsHovered] = useState(false);
   const isCheckedPT = selectedLanguage === 'pt';
   const isCheckedEN = selectedLanguage === 'en';
 
@@ -20,7 +18,15 @@ const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
   const handleClick = (e) => {
     const selectedLanguage = e.target.value;
     setSelectedLanguage(selectedLanguage);
+    localStorage.setItem('selectedLanguage', selectedLanguage);
   };
+
+  useEffect(() => {
+    const storedLanguage = localStorage.getItem('selectedLanguage');
+    if (storedLanguage) {
+      setSelectedLanguage(storedLanguage);
+    }
+  }, []); // Executa somente uma vez ao montar o componente
 
   return (
     <div className="langs flex-row flex gap-3 text-2xl">
@@ -44,7 +50,6 @@ const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
           height={50}
           onMouseEnter={handleMouseEnter}
           onMouseLeave={handleMouseLeave}
-          
         />
       </label>
 
