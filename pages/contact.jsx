@@ -8,7 +8,7 @@ import HoverableImage from '../components/Hover.jsx';
 
 const Contato = () => {
   const [selectedLanguage, setSelectedLanguage] = useState();
-  
+
   useEffect(() => {
     if (typeof window !== 'undefined') {
       const storedLanguage = localStorage.getItem('selectedLanguage');
@@ -19,37 +19,42 @@ const Contato = () => {
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (
-    <div id="gallery" className='bg-[#000]'>
+    <div id="gallery" className="bg-[#000]">
       <Head>
         <title>Bragi Estúdios - {t.paginas.contact}</title>
         <link rel="icon" href="/brg_icon.svg" />
       </Head>
-      <div className="grid lg:grid-cols-8 flex-col h-screen bg-preto bg-cover bg-top">
+      <div className="sm:grid sm:flex flex-col grid-cols-8 flex-col h-screen bg-preto bg-cover bg-top ">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
           />
         </div>
-        <div className="self-end sm:pt-0 pt-24 col-span-4">
-          <img src="/bragi_equipe.png" alt="" className="w-full lg:max-w-6xl" />
+        <div className="self-end sm:pt-0 pt-24 col-span-4 w-full sm:w-full">
+          <img src="/bragi_equipe.png" alt="" className="w-full" />
         </div>
         <div className="flex flex-col items-center justify-center px-12 col-span-3">
-          <div className="text-purple z-20 w-full ">
+          <div className="text-purple z-20">
             <div className="inline-block p-4 shadow-lg font-semibold ">
               <div className="text-lg h-max pb-4">
                 <span className=" text-orange"></span>
               </div>
-              <div className="flex flex-col gap-4 text-5xl text-white">
-                {t.contato.title}
+              <div className="flex flex-col gap-4 text-4xl sm:text-5xl text-white w-full">
+                <h1>{t.contato.title}</h1>
               </div>
               <br />
-              <div className="flex flex-col gap-4 text-2xl text-white">
-                {t.contato.div1}
+              <div className="flex flex-col gap-4 sm:text-2xl text-xl text-white">
+                <h2>{t.contato.div1}</h2>
               </div>
               <br />
-              <div className="flex flex-col gap-4 text-2xl text-white">
-              <a href="mailto:team@bragiestudios.com" className="flex flex-col gap-4 text-2xl text-white hover:text-[#d05424]">team@bragiestudios.com</a>
+              <div className="flex flex-col gap-4 sm:text-2xl text-xl text-white">
+                <a
+                  href="mailto:team@bragiestudios.com"
+                  className="flex flex-col gap-4 text-2xl text-white hover:text-[#d05424]"
+                >
+                  team@bragiestudios.com
+                </a>
               </div>
             </div>
           </div>
