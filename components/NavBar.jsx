@@ -33,13 +33,13 @@ const NavBar = ({ selectedLanguage })  => {
               </Link>
             </li>
             <li>
-              <Link className={style.botoes} href='jogos'>{t.navbar.jogos}</Link> 
+              <Link className={style.botoes} href='games'>{t.navbar.jogos}</Link> 
             </li>
             <li className='text-center'>
-              <Link className={style.botoes} href='sobre'>{t.navbar.sobre}</Link>
+              <Link className={style.botoes} href='about'>{t.navbar.sobre}</Link>
             </li>
             <li>
-              <Link className={style.botoes} href='contato'>{t.navbar.contato}</Link>
+              <Link className={style.botoes} href='contact'>{t.navbar.contato}</Link>
             </li>
             <li className='text-center'>
               <Link className={style.botoes} href='https://bragiestudios.com/press/' target="_blank">PRESS KIT</Link>

@@ -48,6 +48,11 @@ export default{
     contato:{
         title: 'FALE COM A GENTE :D',
         div1: 'Amamos conhecer pessoas que curtem os nossos jogos!',
+    }, 
+    paginas:{
+        games: 'Jogos',
+        about: 'Sobre', 
+        contact: 'Contato',
     }
 };
 

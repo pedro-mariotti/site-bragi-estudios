@@ -3,6 +3,7 @@ import React, { useState, useEffect } from 'react';
 import HoverableImage from '../components/Hover';
 
 const SelectLanguage = ({ selectedLanguage, setSelectedLanguage }) => {
+  
   const [setIsHovered] = useState(false);
   const isCheckedPT = selectedLanguage === 'pt';
   const isCheckedEN = selectedLanguage === 'en';

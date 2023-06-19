@@ -23,7 +23,8 @@ html {
   background-image: url('../public/bg-preto.jpg');
 }
 
-.main{
+#main{
   color: #fff;
   text-shadow: 5px 5px #00000033;
 }
+

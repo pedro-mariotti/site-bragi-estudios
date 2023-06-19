@@ -2,15 +2,21 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import SideMenu from './SideMenu';
+import Head from 'next/head';
+import en from '../locales/en.js';
+import pt from '../locales/pt.js';
 
 const Slider = ({ slides }) => {
-  const [selectedLanguage, setSelectedLanguage] = useState(
-    localStorage.getItem('selectedLanguage') || 'pt'
-  );
-
+  const [selectedLanguage, setSelectedLanguage] = useState();
+  
   useEffect(() => {
-    localStorage.setItem('selectedLanguage', selectedLanguage);
-  }, [selectedLanguage]);
+    if (typeof window !== 'undefined') {
+      const storedLanguage = localStorage.getItem('selectedLanguage');
+      setSelectedLanguage(storedLanguage || 'pt');
+    }
+  }, []);
+
+  const t = selectedLanguage === 'en' ? en : pt;
 
   const [current, setCurrent] = useState(0);
   const length = slides.length;
@@ -29,6 +35,10 @@ const Slider = ({ slides }) => {
 
   return (
     <div id="gallery">
+      <Head>
+        <title>Bragi Estúdios - {t.paginas.games}</title>
+        <link rel="icon" href="/brg_icon.svg" />
+      </Head>
       {slides.map((slide, index) => {
         return (
           <div

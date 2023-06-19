@@ -32,24 +32,29 @@ export default {
         
         missao: {
             title:'Mission',
-            texto:'To tell stories and create unique experiences through our games, made for and with our players.',
+            texto:'To provide unique experiences through our games, created for and with our players.',
         },
         visao:{
             title:'Vision', 
-            texto:'To be a reference in original games in the North-Northeast region and to create games where everyone can feel included and heard, because a good idea can come from anywhere!',
+            texto:'To be a reference in original games in Latin America.',
         },
             valores:{
                 title:'Values',
-                criatividade:'Creativity: Keeping an open mind to new experiences and possibilities.',
-                construimos:'Building together: Maintaining active communication between the team and the community, always collaborating and sharing ideas for the growth of the team and the products.',
-                responsabilidade: 'Socioemotional responsibility: Remembering that above all, we are people, and preserving social and emotional well-being is essential for a happy and welcoming work environment.',
-                inclusao: 'Inclusion, diversity, and pride in our journey: We are from Bahia, the Northeast, and Brazil, but each one of us also has our own personal and subjective journey, which should be constantly celebrated and reaffirmed with pride.',
+                criatividade:'Creativity',
+                construimos:'Building together',
+                responsabilidade: 'Socioemotional responsibility',
+                inclusao: 'Inclusion, diversity, and pride in our journey',
         },
         
     },
     contato:{
         title: 'TALK TO US :D',
         div1: 'We love to meet people that enjoy our games!',
+    }, 
+    paginas:{
+        games: 'Games',
+        about: 'About', 
+        contact: 'Contact',
     }
 
 };

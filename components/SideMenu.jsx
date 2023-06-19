@@ -63,14 +63,14 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                   />
                 </Link>
               </li>
-              <li>
-                <Link href="/jogos">{t.navbar.jogos}</Link>
+              <li className={window.location.pathname === '/games' ? 'bg-orange' : ''}>
+                <Link href="games">{t.navbar.jogos}</Link>
               </li>
-              <li>
-                <Link href="/sobre">{t.navbar.sobre}</Link>
+              <li className={window.location.pathname === '/about' ? 'bg-orange' : ''}>
+                <Link href="about">{t.navbar.sobre}</Link>
               </li>
-              <li>
-                <Link href="/contato">{t.navbar.contato}</Link>
+              <li className={window.location.pathname === '/contact' ? 'bg-orange' : ''}>
+                <Link href="contact">{t.navbar.contato}</Link>
               </li>
               <li>
                 <Link href="https://bragiestudios.com/press/" target="_blank">
