@@ -69,7 +69,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
               <Link href="/sobre">
                 <li>{t.navbar.sobre}</li>
               </Link>
-              <Link href="/contato">
+              <Link href="/contact">
                 <li>{t.navbar.contato}</li>
               </Link>
               <Link href="https://bragiestudios.com/press/" target="_blank">
