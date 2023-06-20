@@ -52,7 +52,7 @@ export default {
   contato: {
     title: 'TALK TO US :D',
     div1: 'We love to meet people that enjoy our games!',
-    curriculo: 'Want to be a part of our team?',
+    curriculo: 'Want to be part of our team?',
     curriculo2: 'Send your resume to:',
   },
   paginas: {
