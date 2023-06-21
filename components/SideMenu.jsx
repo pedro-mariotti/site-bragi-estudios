@@ -151,6 +151,9 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                   setSelectedLanguage={setSelectedLanguage}
                 />
               </li>
+              <div className="font-thin text-center pb-4 text-white text-[12px] opacity-60">
+                <p>© Copyright 2018-2023 - Bragi Estúdios</p>
+              </div>
             </ul>
           </div>
         </motion.div>
