@@ -27,7 +27,7 @@ const Main = () => {
       <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
         <div className="pt-8 self-end lg:self-start flex flex-col justify-between h-full pb-4 items-end">
           <img src="/logo_main.svg" alt="logo" className="w-72 lg:w-96" />
-          <p className="mr-4 bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:block hidden">
+          <p className="mr-4 bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:block hidden drop-shadow-none">
             © Copyright 2018-2023 - Bragi Estúdios
           </p>
         </div>
@@ -163,7 +163,7 @@ const Main = () => {
                 </li>
               </ul>
             </div>
-            <p className="bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:hidden block text-center">
+            <p className="bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:hidden block text-center drop-shadow-none">
               © Copyright 2018-2023 - Bragi Estúdios
             </p>
           </div>
