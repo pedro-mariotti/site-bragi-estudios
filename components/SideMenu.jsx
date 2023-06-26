@@ -63,13 +63,13 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                   />
                 </li>
               </Link>
-              <Link href="/games">
+              <Link href="games">
                 <li>{t.navbar.jogos}</li>
               </Link>
-              <Link href="/sobre">
+              <Link href="about">
                 <li>{t.navbar.sobre}</li>
               </Link>
-              <Link href="/contact">
+              <Link href="contact">
                 <li>{t.navbar.contato}</li>
               </Link>
               <Link href="https://bragiestudios.com/press/" target="_blank">
@@ -139,7 +139,7 @@ export default function SideMenu({ selectedLanguage, setSelectedLanguage }) {
                       default: '/redes_sociais/twitter.svg',
                       hover: '/redes_sociais/twitter_hover.svg',
                     }}
-                    alt="twiter"
+                    alt="twitter"
                     width={60}
                     height={60}
                   />
