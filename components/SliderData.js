@@ -6,7 +6,7 @@ export const SliderData = [
     ano: '2022',
     ano_en: '2022',
     image:
-      "'opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full sm:bg-[url('/Banners/orbits-bg.jpg')] bg-[url('/Banners/orbits-bg-mobile.jpg')] bg-cover bg-center'",
+      "'overflow-scroll opacity-[1] ease-in duration-200 h-screen flex sm:justify-between sm:items-start sm:flex-row flex-col w-full sm:bg-[url('/Banners/orbits-bg.jpg')] bg-[url('/Banners/orbits-bg-mobile.jpg')] bg-cover bg-center'",
     logo: '/Banners/LOGO_2.png',
     descricao_pt:
       'Você pode ser um conquistador de órbitas. Salte de uma órbita para outra evitando as órbitas vermelhas. Libere os novos níveis coletando as estrelas amarelas e azuis. Cuidado para não mandar sua nave para o espaço!',

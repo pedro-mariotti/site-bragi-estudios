@@ -51,7 +51,7 @@ const Slider = ({ slides }) => {
                   selectedLanguage={selectedLanguage}
                   setSelectedLanguage={setSelectedLanguage}
                 />
-                <div className="flex flex-col items-center justify-center h-full sm:w-[40rem] gap-7 px-12 sm:pl-0 pb-12 sm:pb-0 sm:pt-24 pt-8">
+                <div className="flex flex-col items-center justify-center h-full lg:w-[40rem] gap-7 px-12 lg:pl-0 pb-12 lg:pb-0 lg:pt-24 pt-8">
                   <div className="w-full h-96 flex items-center justify-center">
                     <img
                       src={slide.logo}

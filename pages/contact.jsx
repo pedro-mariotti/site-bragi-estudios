@@ -24,18 +24,18 @@ const Contato = () => {
         <title>Bragi Estúdios - {t.paginas.contact}</title>
         <link rel="icon" href="/brg_icon.svg" />
       </Head>
-      <div className="sm:grid sm:flex flex-col grid-cols-8 flex-col sm:h-screen bg-preto bg-cover h-screen bg-top">
+      <div className="lg:grid lg:flex flex-col grid-cols-8 flex-col bg-preto bg-cover h-screen bg-top overflow-scroll">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
             setSelectedLanguage={setSelectedLanguage}
           />
         </div>
-        <div className="self-end sm:pt-0 pt-24 col-span-4 w-full sm:w-full">
+        <div className="self-end lg:pt-0 pt-24 col-span-4 w-full lg:w-full">
           <img src="/bragi_equipe.png" alt="" className="w-full" />
         </div>
-        <div className="lg:grid grid-rows-3 items-center px-8 col-span-3 h-max pb-4">
-          <div className="flex flex-col row-start-2 border sm:border-none border-white sm:mb-0 mb-8 p-4 sm:p-0">
+        <div className="lg:grid grid-rows-3 items-center col-span-3 mx-12 lg:m-0 ">
+          <div className="flex flex-col row-start-2 border lg:border-none border-white p-4 mb-4 lg:m-0 lg:p-0">
             <div className="text-purple z-20 pb-4">
               <div className="inline-block shadow-lg font-semibold ">
                 <div className="text-lg h-max pb-4">
