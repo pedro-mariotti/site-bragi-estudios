@@ -7,7 +7,6 @@ module.exports = {
     './app/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
-    
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -27,18 +26,21 @@ module.exports = {
   },
   plugins: [
     function ({ addComponents }) {
-      addComponents({
-        '.bg-bragi-roxo': {
-          backgroundImage: "url('../public/bg-roxo.jpg')",
+      addComponents(
+        {
+          '.bg-bragi-roxo': {
+            backgroundImage: "url('../public/bg-roxo.jpg')",
+          },
         },
-      }, {
-        // define a camada personalizada aqui
-        // use `components` para uma classe global personalizada
-        // ou `utilities` para uma utilidade personalizada
-        respectPrefix: false,
-        respectImportant: false,
-        layer: 'components',
-      })
-    }
+        {
+          // define a camada personalizada aqui
+          // use `components` para uma classe global personalizada
+          // ou `utilities` para uma utilidade personalizada
+          respectPrefix: false,
+          respectImportant: false,
+          layer: 'components',
+        }
+      );
+    },
   ],
-}
+};
