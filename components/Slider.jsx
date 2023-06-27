@@ -34,7 +34,10 @@ const Slider = ({ slides }) => {
   }
 
   return (
-    <div id="gallery">
+    <div
+      id="gallery"
+      className="w-full h-full flex items-center overflow-y-scroll xl:overflow-hidden"
+    >
       <Head>
         <title>Bragi Estúdios - {t.paginas.games}</title>
         <link rel="icon" href="/brg_icon.svg" />
@@ -51,18 +54,13 @@ const Slider = ({ slides }) => {
                   selectedLanguage={selectedLanguage}
                   setSelectedLanguage={setSelectedLanguage}
                 />
-                <div className="flex flex-col sm:flex-row lg:flex-col items-center justify-center h-full lg:w-[40rem] gap-4 mx-4">
-                  <div className="">
-                    <img
-                      src={slide.logo}
-                      alt="game logo"
-                      className="sm:max-w-xs lg:max-w-[24rem] sm:h-full lg:h-96 h-96 object-contain"
-                    />
-                  </div>
+                <div className="w-full h-full flex flex-col sm:flex-row lg:flex-col items-center justify-center gap-4 self-center px-4 pt-16 overflow-y-scroll lg:overflow-y-visible lg:w-2/6 lg:h-1/4">
+                  <img src={slide.logo} alt="game logo" className="w-96 h-96" />
+
                   <div className="flex flex-col gap-4">
                     <div className="text-purple z-20 w-full">
-                      <div className="inline-block p-4 bg-[#ffffff] h-72 shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
-                        <div className="flex-wrap text-lg h-max pb-4 flex justify-between items-center">
+                      <div className="h-96 inline-block p-4 bg-[#ffffff]  shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
+                        <div className="flex-wrap text-lg pb-4 flex justify-between items-center">
                           <div>
                             <span className="text-orange">{slide.titulo}</span>{' '}
                             |{' '}

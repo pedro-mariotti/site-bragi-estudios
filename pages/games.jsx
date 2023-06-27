@@ -5,10 +5,8 @@ import React from 'react';
 
 const Jogos = () => {
   return (
-    <div className="bg-[#000]">
-      <div>
-        <Slider slides={SliderData} />
-      </div>
+    <div className="bg-[#000] w-screen h-screen">
+      <Slider slides={SliderData} />
     </div>
   );
 };
