@@ -61,7 +61,7 @@ const Slider = ({ slides }) => {
                   </div>
                   <div className="flex flex-col gap-4">
                     <div className="text-purple z-20 w-full">
-                      <div className="inline-block p-4 bg-[#ffffff] h-56 shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
+                      <div className="inline-block p-4 bg-[#ffffff] h-72 shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
                         <div className="flex-wrap text-lg h-max pb-4 flex justify-between items-center">
                           <div>
                             <span className="text-orange">{slide.titulo}</span>{' '}
