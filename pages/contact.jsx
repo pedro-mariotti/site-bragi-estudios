@@ -19,12 +19,12 @@ const Contato = () => {
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (
-    <div id="gallery" className="bg-[#000]">
+    <div id="gallery" className="bg-[#000] h-screen w-screen">
       <Head>
         <title>Bragi Estúdios - {t.paginas.contact}</title>
         <link rel="icon" href="/brg_icon.svg" />
       </Head>
-      <div className="lg:grid lg:flex flex-col grid-cols-8 flex-col bg-preto bg-cover md:h-screen h-max bg-top sm:overflow-hidden lg:pb-0 pb-4">
+      <div className="h-full w-full lg:grid lg:flex flex-col grid-cols-8 flex-col bg-preto bg-cover bg-top overflow-y-scroll lg:pb-0 pb-4 xl:overflow-hidden">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
