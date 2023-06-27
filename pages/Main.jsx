@@ -24,7 +24,7 @@ const Main = () => {
       className="main h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
     >
       {/* Logo background */}
-      <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 sm:gap-0">
+      <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 lg:gap-0">
         <div className="pt-8 self-end lg:self-start flex flex-col justify-between h-full pb-4 items-end">
           <img src="/logo_main.svg" alt="logo" className="w-72 lg:w-96" />
           <p className="mr-4 bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:block hidden drop-shadow-none">
@@ -33,7 +33,7 @@ const Main = () => {
         </div>
 
         {/* Conteiner geral dos textos */}
-        <div className="flex self-center flex-col  sm:ml-48 mb-14 sm:mb-28">
+        <div className="flex self-center flex-col  lg:ml-48 mb-14 lg:mb-28">
           <div className="flex flex-col gap-8 text-white">
             <SelectLanguage
               selectedLanguage={selectedLanguage}

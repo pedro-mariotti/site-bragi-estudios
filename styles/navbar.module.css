@@ -1,9 +1,9 @@
 .navbar {
-  @apply w-full z-10 ease-in duration-300 bg-black px-10 py-11 sm:py-5;
+  @apply w-full z-10 ease-in duration-300 bg-black px-10 py-11 lg:py-5;
 }
 
 .gridBotoes {
-  @apply grid grid-cols-3 gap-12 sm:flex justify-between items-center;
+  @apply grid grid-cols-3 gap-12 lg:flex justify-between items-center;
 }
 
 .colunaLogo {
@@ -15,5 +15,5 @@
 }
 
 .botoes {
-  @apply text-lg text-white hover:text-[#d05424] sm:pr-24;
+  @apply text-lg text-white hover:text-[#d05424] lg:pr-24;
 }
