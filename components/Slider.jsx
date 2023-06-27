@@ -54,13 +54,13 @@ const Slider = ({ slides }) => {
                   selectedLanguage={selectedLanguage}
                   setSelectedLanguage={setSelectedLanguage}
                 />
-                <div className="w-full h-full flex flex-col sm:flex-row lg:flex-col items-center justify-center gap-4 self-center px-4 pt-16 overflow-y-scroll lg:overflow-y-visible lg:w-2/6 lg:h-1/4">
-                  <img src={slide.logo} alt="game logo" className="w-96 h-96" />
+                <div className="w-full h-full flex flex-col sm:flex-row lg:flex-col items-center justify-center gap-4 self-center px-4 pt-16 overflow-y-scroll lg:w-2/6 lg:h-full">
+                  <img src={slide.logo} alt="game logo" className="w-72" />
 
                   <div className="flex flex-col gap-4">
                     <div className="text-purple z-20 w-full">
-                      <div className="h-96 inline-block p-4 bg-[#ffffff]  shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
-                        <div className="flex-wrap text-lg pb-4 flex justify-between items-center">
+                      <div className="inline-block p-4 bg-[#ffffff] shadow-lg font-semibold w-full overflow-y-scroll sm:overflow-hidden">
+                        <div className="text-lg pb-4 flex justify-between items-center">
                           <div>
                             <span className="text-orange">{slide.titulo}</span>{' '}
                             |{' '}
