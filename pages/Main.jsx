@@ -21,19 +21,19 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="main h-max lg:h-screen flex justify-between flex-col bg-bragi-roxo bg-cover align-center"
+      className="main h-screen w-screen flex flex-col bg-bragi-roxo bg-cover align-center overflow-y-scroll gap-4 md:justify-between md:overflow-y-hidden lg:gap-0"
     >
       {/* Logo background */}
-      <div className="h-full flex flex-wrap w-screen items-start lg:items-end flex-col lg:flex-row-reverse justify-between gap-12 lg:gap-0">
-        <div className="pt-8 self-end lg:self-start flex flex-col justify-between h-full pb-4 items-end">
-          <img src="/logo_main.svg" alt="logo" className="w-72 lg:w-96" />
-          <p className="mr-4 bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:block hidden drop-shadow-none">
+      <div className="w-full flex flex-col justify-between px-4 lg:flex-row-reverse lg:h-[90%] lg:px-0">
+        <div className=" pt-8 self-end flex flex-col justify-between h-full items-end pb-4 lg:w-1/5 lg:self-start">
+          <img src="/logo_main.svg" alt="logo" className="w-full" />
+          <p className="bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 lg:block hidden drop-shadow-none self-center">
             © Copyright 2018-2023 - Bragi Estúdios
           </p>
         </div>
 
         {/* Conteiner geral dos textos */}
-        <div className="flex self-center flex-col  lg:ml-48 mb-14 lg:mb-28">
+        <div className="w-full flex self-center flex-col lg:ml-12 lg:w-1/4">
           <div className="flex flex-col gap-8 text-white">
             <SelectLanguage
               selectedLanguage={selectedLanguage}
@@ -43,25 +43,25 @@ const Main = () => {
               href="https://fonts.cdnfonts.com/css/century-gothic"
               rel="stylesheet"
             ></link>
-            <h1 id="titleMain" className="text-5xl sm:text-7xl font-bold mb-2">
+            <h1 id="titleMain" className="text-5xl lg:text-7xl font-bold mb-2">
               {' '}
               Bragi Estúdios
             </h1>
-            <div className="flex items-center gap-4 font-bold uppercase sm:mb-2 sm:text-4xl item">
+            <div className="flex items-center gap-4 font-bold uppercase lg:mb-2 lg:text-4xl item">
               <img
                 className="w-[4.5rem]"
                 id="svg"
                 src="/hashtag.svg"
                 alt="hashtag"
               />
-              <h2 className="text-2xl sm:text-4xl pb-[7px]">
+              <h2 className="text-2xl lg:text-4xl pb-[7px]">
                 {t.titles.criamos} <br />
                 {t.titles.exp}
               </h2>
             </div>
             <h3
               id="subTitleMain"
-              className="uppercase font-semibold text-base sm:text-lg"
+              className="uppercase font-semibold text-base lg:text-lg"
             >
               {t.descricao.linha1}
               <br />
@@ -163,7 +163,7 @@ const Main = () => {
                 </li>
               </ul>
             </div>
-            <p className="bg-black p-2 rounded-2xl text-[12px] bg-opacity-30 sm:hidden block text-center drop-shadow-none">
+            <p className="bg-black w-max self-center p-2 rounded-2xl text-[12px] bg-opacity-30 lg:hidden block text-center drop-shadow-none">
               © Copyright 2018-2023 - Bragi Estúdios
             </p>
           </div>
