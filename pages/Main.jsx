@@ -21,7 +21,7 @@ const Main = () => {
   return (
     <div
       id="main"
-      className="main h-screen w-screen flex flex-col bg-bragi-roxo bg-cover align-center overflow-y-scroll gap-4 md:justify-between md:overflow-y-hidden lg:gap-0"
+      className="main h-screen w-screen flex flex-col bg-bragi-roxo bg-cover align-center overflow-y-scroll gap-4 justify-between md:overflow-y-hidden lg:gap-0"
     >
       {/* Logo background */}
       <div className="w-full flex flex-col justify-between px-4 lg:flex-row-reverse lg:h-[90%] lg:px-0">
