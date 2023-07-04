@@ -24,7 +24,7 @@ const Contato = () => {
         <title>Bragi Estúdios - {t.paginas.contact}</title>
         <link rel="icon" href="/brg_icon.svg" />
       </Head>
-      <div className="h-full w-full lg:grid lg:flex flex-col grid-cols-8 flex-col  overflow-y-scroll lg:pb-0 pb-4 xl:overflow-hidden">
+      <div className="h-full w-full lg:grid lg:flex flex-col grid-cols-8 flex-col overflow-y-scroll lg:pb-0 pb-4 xl:overflow-hidden">
         <div className="col-span-1 z-50">
           <SideMenu
             selectedLanguage={selectedLanguage}
@@ -34,8 +34,8 @@ const Contato = () => {
         <div className="self-end lg:pt-0 pt-24 col-span-4 w-full lg:w-full">
           <img src="/bragi_equipe.png" alt="" className="w-full" />
         </div>
-        <div className="lg:grid grid-rows-3 items-center col-span-3 mx-12 lg:m-0 ">
-          <div className="flex flex-col row-start-2 border lg:border-none border-white p-4 mb-4 lg:m-0 lg:p-0">
+        <div className="col-span-3 self-center px-8 flex flex-col items-center">
+          <div className="flex flex-col gap-4 border lg:border-none border-white p-4 mb-4 lg:m-0 lg:p-0">
             <div className="text-purple z-20 pb-4">
               <div className="inline-block shadow-lg font-semibold ">
                 <div className="text-lg h-max pb-4">
@@ -49,14 +49,35 @@ const Contato = () => {
                   <h2>{t.contato.div1}</h2>
                 </div>
                 <br />
-                <div className="flex flex-col gap-4 sm:text-2xl text-xl text-white">
-                  <a
-                    href="mailto:team@bragiestudios.com"
-                    className="flex flex-col gap-4 sm:text-2xl text-lg text-white hover:text-[#d05424]"
-                  >
-                    team@bragiestudios.com
-                  </a>
-                </div>
+                <form className="flex flex-col gap-4">
+                  <input
+                    form
+                    required
+                    autoComplete="email"
+                    type="email"
+                    placeholder={t.contato.formMail}
+                    className="p-2"
+                  />
+                  <input
+                    form
+                    required
+                    type="text"
+                    placeholder={t.contato.formSubject}
+                    className="p-2"
+                  />
+                  <textarea
+                    form
+                    required
+                    placeholder={t.contato.formBody}
+                    className="p-2"
+                  />
+                  <input
+                    form
+                    type="submit"
+                    value={t.contato.formButton}
+                    className="bg-purple text-white p-2 hover:bg-orange cursor-pointer"
+                  />
+                </form>
               </div>
             </div>
             <div className=" flex flex-row gap-3 z-20 w-full">
@@ -151,7 +172,7 @@ const Contato = () => {
               </ul>
             </div>
           </div>
-          <div className=" text-white row-start-3 sm:border-none border sm:p-0 p-4">
+          <div className=" text-white row-start-3 sm:border-none border sm:p-0 p-4 self-start">
             <p className="font-bold sm:text-xl text-lg">
               {t.contato.curriculo}
             </p>
