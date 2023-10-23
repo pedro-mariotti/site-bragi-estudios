@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import Head from 'next/head';
 import SideMenu from '@/components/SideMenu';
 import en from '../locales/en.js';
@@ -7,6 +8,19 @@ import pt from '../locales/pt.js';
 import HoverableImage from '../components/Hover.jsx';
 
 const Contato = () => {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_nhw33mq', 'template_cwrifal', form.current, '8RrN2gkVnOL6mnoxl')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+  
   const [selectedLanguage, setSelectedLanguage] = useState();
 
   useEffect(() => {
@@ -49,7 +63,7 @@ const Contato = () => {
                   <h2>{t.contato.div1}</h2>
                 </div>
                 <br />
-                <form className="flex flex-col gap-4">
+                <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
                   <input
                     form
                     required
@@ -66,6 +80,7 @@ const Contato = () => {
                     className="p-2"
                   />
                   <textarea
+                    name="message"
                     form
                     required
                     placeholder={t.contato.formBody}
@@ -77,6 +92,7 @@ const Contato = () => {
                     value={t.contato.formButton}
                     className="bg-purple text-white p-2 hover:bg-orange cursor-pointer"
                   />
+                  <div className="g-recaptcha" data-sitekey="your_site_key"></div>
                 </form>
               </div>
             </div>
