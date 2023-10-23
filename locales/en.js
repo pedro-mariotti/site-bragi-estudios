@@ -51,6 +51,7 @@ export default {
   },
   contato: {
     title: 'TALK TO US :D',
+    nameMail: 'Your name',
     formMail: 'Your email',
     formSubject: 'Subject',
     formBody: 'Tell us your thoughts!',

@@ -51,6 +51,7 @@ export default {
   contato: {
     title: 'FALE COM A GENTE :D',
     div1: 'Amamos conhecer pessoas que curtem os nossos jogos!',
+    nameMail: 'Seu nome',
     formMail: 'Seu email',
     formSubject: 'Assunto',
     formBody: 'Nos conte o que tem em mente!',

@@ -6,6 +6,7 @@ import SideMenu from '@/components/SideMenu';
 import en from '../locales/en.js';
 import pt from '../locales/pt.js';
 import HoverableImage from '../components/Hover.jsx';
+import Script from 'next/script'
 
 const Contato = () => {
   const form = useRef();
@@ -33,7 +34,9 @@ const Contato = () => {
   const t = selectedLanguage === 'en' ? en : pt;
 
   return (
+    
     <div id="gallery" className="bg-preto bg-cover bg-top h-screen w-screen">
+      <Script src="https://www.google.com/recaptcha/api.js" strategy="lazyOnload"/>
       <Head>
         <title>Bragi Estúdios - {t.paginas.contact}</title>
         <link rel="icon" href="/brg_icon.svg" />
@@ -65,34 +68,40 @@ const Contato = () => {
                 <br />
                 <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
                   <input
-                    form
+                    name="name"
+                    required
+                    autoComplete="name"
+                    type="name"
+                    placeholder={t.contato.nameMail}
+                    className="p-2"
+                  />
+                  <input                    
+                    name="email"
                     required
                     autoComplete="email"
                     type="email"
                     placeholder={t.contato.formMail}
                     className="p-2"
                   />
-                  <input
-                    form
+                  <input                    
+                    name="subject"
                     required
                     type="text"
                     placeholder={t.contato.formSubject}
                     className="p-2"
                   />
                   <textarea
-                    name="message"
-                    form
+                    name="message"                    
                     required
                     placeholder={t.contato.formBody}
                     className="p-2"
                   />
-                  <input
-                    form
+                  <input                  
                     type="submit"
                     value={t.contato.formButton}
                     className="bg-purple text-white p-2 hover:bg-orange cursor-pointer"
                   />
-                  <div className="g-recaptcha" data-sitekey="your_site_key"></div>
+                  <div className="g-recaptcha" data-sitekey="6LdrAsUoAAAAANT8MfRRUiFYFjVR6jtn9-saKXtT"></div>
                 </form>
               </div>
             </div>
