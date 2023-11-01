@@ -19,7 +19,8 @@ export const SliderData = [
     link_apple: 'https://apps.apple.com/br/app/orbits-conqueror/id1628822827 ',
     link_html: '',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: false,
   },
   {
     titulo: 'Mooh',
@@ -40,7 +41,8 @@ export const SliderData = [
     link_apple: '',
     link_html: '',
     link_itchio: '',
-    released: 'false',
+    released: false,
+    licenciamento: false,
   },
   {
     titulo: '100NHAS',
@@ -62,7 +64,8 @@ export const SliderData = [
     link_apple: '',
     link_html: '',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: false,
   },
   {
     titulo: '100NHAS Fugaz',
@@ -84,7 +87,8 @@ export const SliderData = [
     link_apple: '',
     link_html: '',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: false,
   },
   {
     titulo: 'Building Sort',
@@ -97,15 +101,16 @@ export const SliderData = [
     logo: '/Banners/building_logo.png',
     descricao_pt:
       'Building Sort é um jogo Puzzle Sorting no qual você deve organizar os andares dos edifícios trocando suas posições. Troque os edifícios estrategicamente para trazer ordem ao caos.',
-    publisher_pt: '',
+    publisher_pt: 'Disponível para licenciamento',
     descricao_en:
       'Building Sort is a Puzzle Sorting game where you must organize the floors of buildings by swapping their positions. Strategically swap the buildings to bring order to the chaos.',
-    publisher_en: '',
+    publisher_en: 'Available for licensing',
     link_android: '',
     link_apple: '',
     link_html: 'https://www.crazygames.com/game/building-sort',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: true,
   },
   {
     titulo: 'TOC',
@@ -126,7 +131,8 @@ export const SliderData = [
     link_apple: '',
     link_html: '',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: false,
   },
   {
     titulo: 'Other Color',
@@ -139,16 +145,17 @@ export const SliderData = [
     logo: '/Banners/othercolor-logo.png',
     descricao_pt:
       'O objetivo do jogo é descobrir rapidamente qual elemento tem uma cor diferente. Acerte muitas cores seguidas para ganhar pontos ofensivos e aumentar sua pontuação!',
-    publisher_pt: '',
+    publisher_pt: 'Disponível para licenciamento',
     descricao_en:
       'The goal is to quickly identify which element has a different color. Guess many consecutive colors correctly to earn offensive points and increase your score!',
-    publisher_en: '',
+    publisher_en: 'Available for licensing',
     link_android:
       'https://play.google.com/store/apps/details?id=com.Freyr.OtherColor ',
     link_apple: '',
     link_html: 'https://bragiestudios.com/HTML5GAMES/OtherColor_BETA/ ',
     link_itchio: '',
-    released: 'true',
+    released: true,
+    licenciamento: true,
   },
   {
     titulo: 'Wood Cutter',
@@ -170,6 +177,30 @@ export const SliderData = [
     link_apple: '',
     link_html: '',
     link_itchio: 'https://bragiestudios.itch.io/wood-cutter',
-    released: 'true',
+    released: true,
+    licenciamento: false,
+  },
+  {
+    titulo: 'Colorful Ghosts',
+    confira_en: 'Try it:',
+    confira_pt: 'Confira:',
+    ano: '2022',
+    ano_en: '2022',
+    image:
+      "'opacity-[1] ease-in duration-200 h-full flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/CG_bg.png')] bg-[url('/Banners/CG_bg.png')] bg-cover bg-center'",
+    logo: '/Banners/CG_Logo.png',
+    descricao_pt:
+      'Os fantasmas estão famintos por doces! Escolha o doce perfeito para o fantasma certo. Desvende a combinação de cores dos fantasmas para alcançar seus objetivos em cada fase. Nossa abordagem inclusiva torna o jogo acessível a todos, graças ao sistema ColorADD, permitindo que pessoas com dificuldade em distinguir cores desfrutem de uma boa experiência.',
+    publisher_pt: 'Disponível para licenciamento',
+    descricao_en:
+      'The ghosts are craving sweets! Choose the perfect candy for the right ghost. Uncover the color combinations of the ghosts to achieve your goals in each stage. Our inclusive approach makes the game accessible to everyone, thanks to the ColorADD system, allowing people with difficulty distinguishing colors to enjoy a great experience.',
+    publisher_en: 'Available for licensing',
+    link_android:
+      '',
+    link_apple: '',
+    link_html: 'https://bragiestudios.com/ColorfulGhosts/',
+    link_itchio: '',
+    released: true,
+    licenciamento: true,
   },
 ];

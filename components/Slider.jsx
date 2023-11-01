@@ -71,7 +71,7 @@ const Slider = ({ slides }) => {
                             </span>
                           </div>
                           <div className="flex gap-2 items-center font-normal text-sm">
-                            {slide.released == 'true' && (
+                            {slide.released && (
                               <p>
                                 {selectedLanguage === 'en'
                                   ? slide.confira_en
@@ -127,10 +127,16 @@ const Slider = ({ slides }) => {
                               : slide.descricao_pt}
                           </div>
                           <div className="text-lg">
-                            {selectedLanguage === 'en'
-                              ? slide.publisher_en
-                              : slide.publisher_pt}
-                          </div>
+                            {slide.licenciamento ? (
+                              <a className="border-b-2 hover:text-orange" href="mailto:team@bragiestudios.com">
+                                {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt}
+                              </a>
+                            ) : (
+                              <span> 
+                                {selectedLanguage === 'en' ? slide.publisher_en : slide.publisher_pt}
+                              </span>
+                            )}
+                        </div>
                         </div>
                       </div>
                     </div>
