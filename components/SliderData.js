@@ -45,13 +45,14 @@ export const SliderData = [
     licenciamento: false,
   },
   {
+    
     titulo: '100NHAS',
     confira_en: 'Try it:',
     confira_pt: 'Confira:',
     ano: '2018',
     ano_en: '2018',
     image:
-      "'opacity-[1] ease-in duration-200 h-full flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[#526E79] bg-cover bg-center'",
+      "'opacity-[1] ease-in duration-200 h-full flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full bg-[url('/Banners/Background_100NHAS.png')] bg-cover bg-center bg-center'",
     logo: '/Banners/100NHAS_LOGO.png',
     descricao_pt:
       'O 100NHAS é um jogo de enigmas desenvolvido com a função de entretenimento educativo. São 100 fases idealizadas para uma diversão entre amigos e familiares, envolvendo as mais diversas faixas etárias e campos de conhecimento.',
@@ -184,8 +185,8 @@ export const SliderData = [
     titulo: 'Colorful Ghosts',
     confira_en: 'Try it:',
     confira_pt: 'Confira:',
-    ano: '2022',
-    ano_en: '2022',
+    ano: '2023',
+    ano_en: '2023',
     image:
       "'opacity-[1] ease-in duration-200 h-full flex sm:justify-between sm:items-start sm:flex-row flex-col  w-full sm:bg-[url('/Banners/CG_bg.png')] bg-[url('/Banners/CG_bg.png')] bg-cover bg-center'",
     logo: '/Banners/CG_Logo.png',
