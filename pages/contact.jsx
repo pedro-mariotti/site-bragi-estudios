@@ -49,35 +49,14 @@ const Contato = () => {
                   <h2>{t.contato.div1}</h2>
                 </div>
                 <br />
-                <form className="flex flex-col gap-4">
-                  <input
-                    form
-                    required
-                    autoComplete="email"
-                    type="email"
-                    placeholder={t.contato.formMail}
-                    className="p-2"
-                  />
-                  <input
-                    form
-                    required
-                    type="text"
-                    placeholder={t.contato.formSubject}
-                    className="p-2"
-                  />
-                  <textarea
-                    form
-                    required
-                    placeholder={t.contato.formBody}
-                    className="p-2"
-                  />
-                  <input
-                    form
-                    type="submit"
-                    value={t.contato.formButton}
-                    className="bg-purple text-white p-2 hover:bg-orange cursor-pointer"
-                  />
-                </form>
+                <div className="flex flex-col gap-4 sm:text-2xl text-xl text-white">
+                  <a
+                    href="mailto:team@bragiestudios.com"
+                    className="flex flex-col gap-4 sm:text-2xl text-lg text-white hover:text-[#d05424]"
+                  >
+                    team@bragiestudios.com
+                  </a>
+                </div>
               </div>
             </div>
             <div className=" flex flex-row gap-3 z-20 w-full">
