@@ -51,10 +51,6 @@ export default {
   },
   contato: {
     title: 'TALK TO US :D',
-    formMail: 'Your email',
-    formSubject: 'Subject',
-    formBody: 'Tell us your thoughts!',
-    formButton: 'Send',
     div1: 'We love to meet people that enjoy our games!',
     curriculo: 'Want to be part of our team?',
     curriculo2: 'Send your resume to:',

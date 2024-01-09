@@ -51,10 +51,6 @@ export default {
   contato: {
     title: 'FALE COM A GENTE :D',
     div1: 'Amamos conhecer pessoas que curtem os nossos jogos!',
-    formMail: 'Seu email',
-    formSubject: 'Assunto',
-    formBody: 'Nos conte o que tem em mente!',
-    formButton: 'Enviar',
     curriculo: 'Quer fazer parte de nosso time?',
     curriculo2: 'Envie seu curriculo para:',
   },
